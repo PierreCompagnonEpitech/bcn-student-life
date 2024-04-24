@@ -11,7 +11,7 @@
             </div>
         </div>
 
-        <NuxtImg class="mt-10" src="/Rectangle4.png" width="1120" height="335"/>
+        <NuxtImg class="mt-10" src="/Rectangle4.png" width="1120" height="335" loading="lazy" preload/>
 
         <div class="mt-14 text-gray-500 text-center">
             Moving to Barcelona is an extraordinary adventure, but it requires a certain amount of preparation. 

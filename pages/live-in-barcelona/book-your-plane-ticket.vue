@@ -1,7 +1,7 @@
 <template>
     <Header />
 
-    <div class="flex flex-col w-5/6 m-auto mt-24">
+    <div class="flex flex-col w-5/6 m-auto mt-16">
         
         <div class="text-pink-600 font-semibold">LIVE IN BARCELONA</div>
         
@@ -27,7 +27,7 @@
                     <li class="text-lg">KLM : <a href='https://www.klm.es/en' class="text-pink-500 underline">KLM.com</a></li>
                 </div>
             </div>
-            <NuxtImg src="/pic1.png" width="470" height="440"/>
+            <NuxtImg src="/pic1.png" width="470" height="440" loading="lazy" preload/>
         </div>
 
         <div class="text-xl mt-6">Tips for finding a cheap flight:</div>

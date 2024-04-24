@@ -1,7 +1,7 @@
 <template>
     <Header />
 
-    <div class="flex flex-col w-5/6 m-auto mt-24">
+    <div class="flex flex-col w-5/6 m-auto mt-16">
 
         <div class="text-pink-600 font-semibold">LIVE IN BARCELONA</div>
 
@@ -47,7 +47,7 @@
 
             </div>
 
-            <NuxtImg src="/pic2.png" width="250" height="550"/>
+            <NuxtImg src="/pic2.png" width="250" height="550" loading="lazy" preload/>
         </div>
 
         <div class="ml-6 mt-5 w-4/5">
@@ -112,29 +112,29 @@
 
         <div class="text-lg text-pink-600 underline ml-20 mt-16 font-semibold">3.Insurance:</div>
 
-        <li class="mt-5 ml-10">
+        <li class="mt-5 ml-5 w-5/6">
             For students wishing to do an internship, it is imperative to take out a complementary medical 
             insurance covering accidents, hospitalization, repatriation civil liability in Spain before leaving.
         </li>
 
-        <li class="mt-5 ml-10">
+        <li class="mt-5 ml-5 w-5/6">
            It will also be imperative to obtain a Spanish social security number (ask us for precise explanations on site).
         </li>
 
-        <li class="mt-5 ml-10">
+        <li class="mt-5 ml-5 w-5/6">
             It is recommended to apply for the European "Améli" insurance card on ameli.fr. 
             The card is nominative and individual. This card certifies your rights to Health Insurance and allows 
             you to pay for your care in Europe. To obtain your card, log into your Ameli account at least two weeks
              before your departure.
         </li>
 
-        <li class="mt-5 ml-10">
+        <li class="mt-5 ml-5 w-5/6">
             You have no documents to provide. This card is valid for one year. If, upon receipt of your card,
             your card indicates cover until December of the calendar year, please apply again in October / November
             of the fourth year so that it covers the rest of the school year (up to 'to June).
         </li>
 
-        <li class="mt-5 ml-10">
+        <li class="mt-5 ml-5 w-5/6">
             At the doctor, the pharmacist and in public service hospitals, present your card or your provisional 
             certificate. Thanks to your European health insurance card, your medical expenses are covered under 
             the same conditions as for the insured in the country that hosts you.
