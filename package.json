@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxt/image": "^1.5.0",
     "nuxt": "^3.11.2",
+    "nuxt-leaflet": "^0.0.27",
     "vue": "^3.4.21",
     "vue-carousel-3d": "^1.0.1",
     "vue-router": "^4.3.0",
@@ -19,6 +20,9 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.11.4",
-    "nuxt-aos": "^1.2.4"
+    "mapbox-gl": "^3.3.0",
+    "nuxt-aos": "^1.2.4",
+    "nuxt-mapbox": "^1.5.9",
+    "nuxt-primevue": "^0.3.1"
   }
 }

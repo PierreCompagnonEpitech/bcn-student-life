@@ -21,8 +21,9 @@
 
                 <div class="text-lg w-4/5 mt-4">{{ item.location }}</div>
 
-                <a  @click="$router.push(props.redirectUrl)"
-                    class="w-24 cursor-pointer mt-4 mb-2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-600 rounded-full hover:bg-pink-700 focus:ring-4 focus:outline-none focus:ring-pink-300">
+                <a  :href="item.redirectUrl"
+                    class="w-24 cursor-pointer mt-4 mb-2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-600 rounded-full hover:bg-pink-700 focus:ring-4 focus:outline-none focus:ring-pink-300"
+                >
                         Explore
                     <svg class="rtl:rotate-180 w-3 h-3 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -32,8 +33,26 @@
         </div>
         <!-- Card -->
 
-        <div>Where else to look</div>
+        <div class="mt-20 ml-8 text-xl font-semibold">Where else to look:</div>
 
+        <li class="mt-5 ml-20">
+            <a class="text-pink-500" href="https://housinganywhere.com/">housinganywhere.com</a>
+        </li>
+        <li class="ml-20">
+            <a class="text-pink-500" href="https://www.uniplaces.com/accommodation/barcelona">Uniplaces accomodations</a>
+        </li>
+        <li class="ml-20">
+            <a class="text-pink-500" href="https://barcelona.tbs-education.com/student-services/accommodation/">Barcelona tbs education</a>
+        </li>
+        <li class="ml-20">
+            <a class="text-pink-500" href="https://www.habitatgejove.com/webv2c/en/pisos.asp">habitatgejove.com</a>
+        </li>
+        <li class="ml-20">
+            <a class="text-pink-500" href="https://www.barcelonaresidencias.com/rooms-students-barcelona">barcelonaresidencias.com</a>
+        </li>
+        <li class="ml-20">
+            <a class="text-pink-500" href="https://residencia-balmes.com/en/">residencia-balmes.com</a>
+        </li>
     </div>
     <Footer />
 </template>
@@ -46,49 +65,49 @@ const items = ref([
         imageUrl: '/res1.png',
         title: 'Beyoo Accomodation',
         location: 'Two (02) properties : Poble Sec, Marina;\t Gym Central Location;15 min away from the beach Furnished accomodations, Private bathroom, Wifi,Kitchens.',
-        redirectUrl: 'live-in-barcelona/book-your-plane-ticket',
+        redirectUrl: 'https://www.beyoo-living.es/en/',
     },
     {
         imageUrl: '/res2.png',
         title: 'Vita Student',
         location: 'Two (02)properties: Poblenou, Pédralbes, Central location, near the beach.',
-        redirectUrl: 'live-in-barcelona/book-your-plane-ticket',
+        redirectUrl: 'https://www.vitastudent.com/en/',
     },
     {
         imageUrl: '/res3.png',
         title: 'Livensa Living',
         location: 'Two (02)properties: Marina, Diagonal Alto; Bedrooms with kitchen, Rooftop, 01 min from Bus stop.',
-        redirectUrl: 'live-in-barcelona/book-your-plane-ticket',
+        redirectUrl: 'https://www.livensaliving.com/en/',
     },
     {
         imageUrl: '/res4.png',
         title: 'Xior Student Housing',
         location: 'Three (03)properties : Diagonal Besos, Collblanc, Paseo de gracia.',
-        redirectUrl: 'live-in-barcelona/book-your-plane-ticket',
+        redirectUrl: 'https://www.xior.be/en/city/barcelona',
     },
     {
         imageUrl: '/res5.png',
         title: 'The Social Hub',
-        location: '04 min from the bus stop; Central Location.',
-        redirectUrl: 'live-in-barcelona/book-your-plane-ticket',
+        location: '04 min from the bus stop; Central Location. Bikes upon availability.',
+        redirectUrl: 'https://www.thesocialhub.co/barcelona-poblenou/',
     },
     {
         imageUrl: '/res6.png',
         title: 'Onix Residencia',
-        location: 'Discount with universities.',
-        redirectUrl: 'live-in-barcelona/book-your-plane-ticket',
+        location: 'Discount with universities. Great flexibility when it comes to booking types.',
+        redirectUrl: 'https://www.residenciaonix.com/en/',
     },
     {
         imageUrl: '/res7.png',
         title: 'Resa Residence',
-        location: 'Eight (08)residences,  Discount with universities.',
-        redirectUrl: 'live-in-barcelona/book-your-plane-ticket',
+        location: 'Eight (08) well located residences,  Discount with many universities.',
+        redirectUrl: 'https://resa.es/en/',
     },
     {
         imageUrl: '/res8.png',
         title: 'Grupo mestral',
-        location: 'Well located, Affordable prices, Discount with universities.',
-        redirectUrl: 'live-in-barcelona/book-your-plane-ticket',
+        location: 'Well located in a very central area., Affordable prices, Discount with universities.',
+        redirectUrl: 'https://grupomestral.com',
     },
 ]);
 

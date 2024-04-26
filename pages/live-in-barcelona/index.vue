@@ -56,7 +56,7 @@ const tab = ref([
     {
         imageUrl: '/Rectangle25.png',
         title: 'Transport',
-        redirectUrl: '/book-your-plane-ticket',
+        redirectUrl: 'live-in-barcelona/transports',
     },
 ]);
 
