@@ -22,7 +22,7 @@
 
         <div class= "flex flex-wrap justify-between">
             <Card
-                class="mt-6"
+                class="mt-20"
                 v-for="index in tab" 
                 :imageUrl="index.imageUrl" 
                 :title="index.title"

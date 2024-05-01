@@ -12,7 +12,7 @@
                 <a @click="$router.push('/live-in-barcelona')" class="hover:underline cursor-pointer hover:text-pink-500 me-4 md:me-6">Live in Barcelona</a>
             </li>
             <li>
-                <a class="hover:underline cursor-pointer hover:text-pink-500 me-4 md:me-6">Explore Barcelona</a>
+                <a @click="$router.push('explore-barcelona')" class="hover:underline cursor-pointer hover:text-pink-500 me-4 md:me-6">Explore Barcelona</a>
             </li>
             <li>
                 <a class="hover:underline cursor-pointer hover:text-pink-500">Tips and Tricks</a>

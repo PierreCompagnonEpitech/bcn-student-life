@@ -8,10 +8,15 @@
 
             <div class="flex flex-row w-1/2 justify-around">
                 <nav @click="$router.push('/live-in-barcelona')"
-                  :class="{'text-pink-600 lg:text-base font-semibold text-xs cursor-pointer': live, 'hover:text-pink-600 lg:text-base text-xs hover:underline cursor-pointer': !live }">
+                  :class="{'text-pink-600 lg:text-base font-semibold text-xs cursor-pointer': live, 'hover:text-pink-600 lg:text-base text-xs hover:underline cursor-pointer': !live }"
+                >
                     Live in Barcelona
                 </nav>
-                <nav class="hover:text-pink-600 lg:text-base text-xs hover:underline cursor-pointer">Explore Barcelona</nav>
+                <nav  @click="$router.push('/explore-barcelona')"
+                :class="{'text-pink-600 lg:text-base font-semibold text-xs cursor-pointer': explore, 'hover:text-pink-600 lg:text-base text-xs hover:underline cursor-pointer': !explore }"
+                >
+                    Explore Barcelona
+                </nav>
                 <nav class="hover:text-pink-600 lg:text-base text-xs hover:underline cursor-pointer">Tips and Tricks</nav>
             </div>
         </div>
@@ -26,7 +31,9 @@ const route = useRoute();
 
 const live = computed(() => {
    return route.fullPath.includes('/live-in-barcelona');
-//   return route.fullPath === '/live-in-barcelona';
 });
-    
+   
+const explore = computed(() => {
+   return route.fullPath.includes('/explore-barcelona');
+});
 </script>

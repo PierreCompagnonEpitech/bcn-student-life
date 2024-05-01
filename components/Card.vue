@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-md bg-gray-200 border border-gray-200 rounded-3xl shadow ">
+    <!-- <div class="max-w-md bg-gray-200 border border-gray-200 rounded-3xl shadow ">
         <a @click="$router.push(props.redirectUrl)">
             <img class="rounded-t-lg" :src="props.imageUrl" alt="" />
         </a>
@@ -14,6 +14,15 @@
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                 </svg>
             </a>
+        </div>
+    </div> -->
+
+    <div @click="$router.push(props.redirectUrl)" 
+        class="relative max-w-md cursor-pointer transform transition duration-500 hover:scale-105"
+    >
+        <img :src="props.imageUrl"/>
+        <div class="absolute rounded-b-2xl bottom-0 left-0 w-full bg-gray-50 text-center bg-opacity-50 text-white p-4">
+            <h5 class="relative text-2xl font- text-black">{{ props.title }}</h5>
         </div>
     </div>
 </template>

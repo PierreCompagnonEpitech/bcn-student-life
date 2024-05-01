@@ -4,8 +4,8 @@
     <!-- First Block -->
         <div id="FirstBlock" class="flex flex-col w-5/6 m-auto md:flex-row mt-12 justify-center">
             <div id="Text1" class="flex flex-col lg:justify-start m-auto lg:mt-24 barlow-bold justify-center items-center w-full lg:w-1/2">
-                <div class="text-3xl lg:text-5xl w-5/">
-                    <b class="text-pink-600 font-extrabold">Barcelona:</b> Get ready for your dream <b class="font-extrabold text-yellow-500">student adventure!</b>
+                <div class="text-3xl lg:text-6xl">
+                    <b class="text-pink-600 font-etrabold">Barcelona:</b> Get ready for your dream <b class="font-extrabold text-yellow-500">student adventure!</b>
                 </div>
                 <div class="text-gray-500 lg:text-xl w-5/ font-normal mt-2">
                     <em>Studying in Barcelona ?</em> Your ultimate guide to setting in, integrating and making the most of this incredible city.
@@ -69,7 +69,7 @@
                     <div class="text-gray-500 lg:text-lg">
                         Whether you're looking for a wild night out, a cultural gateway or just a coffee to brush up your lessons, you'll find what your looking for in our guide. So don't wait any longer and explore Barcelona.
                     </div>
-                    <button class="h-12 w-32 bg-pink-600 hover:bg-pink-700 rounded-full font-normal mt-6 text-white">
+                    <button @click="$router.push('explore-barcelona')" class="h-12 w-32 bg-pink-600 hover:bg-pink-700 rounded-full font-normal mt-6 text-white">
                         See more
                     </button>
                 </div>
