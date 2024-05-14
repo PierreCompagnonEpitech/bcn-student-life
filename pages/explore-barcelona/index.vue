@@ -2,7 +2,7 @@
     <Header />
     
     <div class="flex flex-col justify-center w-5/6 m-auto items-center">
-        <div id="Text1" class="flex flex-col lg:justify-start m-auto lg:mt-12 barlow-bold justify-center">
+        <div id="Text1" class="flex flex-col lg:justify-start m-auto  lg:mt-12 barlow-bold justify-center">
             <div class="text-pink-600 font-normal mt-2">
                 EXPLORE BARCELONA
             </div>
@@ -11,7 +11,8 @@
             </div>
         </div>
 
-        <NuxtImg class="mt-10" src="/Rectangle5.png" width="1120" height="335" loading="lazy" preload/>
+        <Map class="mt-12"/>
+        <!-- <NuxtImg class="mt-10" src="/Rectangle5.png" width="1120" height="335" loading="lazy" preload/> -->
 
         <div class="mt-14 text-gray-500 text-center">
             Barcelona is a feast for the senses, and that includes its incredible culinary scene and vibrant nightlife.
@@ -42,32 +43,32 @@ const tab = ref([
     {
         imageUrl: '/Rectangle 22.png',
         title: 'Sights and Landmarks',
-        redirectUrl: 'live-in-barcelona/book-your-plane-ticket',
-    },
-    {
-        imageUrl: '/Rectangle 29.png',
-        title: 'Attractions',
-        redirectUrl: 'live-in-barcelona/administrative-formalities',
+        redirectUrl: 'explore-barcelona/sights-and-landmarks',
     },
     {
         imageUrl: '/Rectangle 23.png',
-        title: 'Museum',
-        redirectUrl: 'live-in-barcelona/accomodations',
+        title: 'Museums',
+        redirectUrl: 'explore-barcelona/museums',
     },
     {
         imageUrl: '/Rectangle 24.png',
         title: 'Parks',
-        redirectUrl: 'live-in-barcelona/transports',
+        redirectUrl: 'explore-barcelona/parks',
+    },
+    {
+        imageUrl: '/Rectangle 29.png',
+        title: 'Attractions',
+        redirectUrl: 'explore-barcelona/attractions',
     },
     {
         imageUrl: '/Rectangle 31.png',
         title: 'Restaurants',
-        redirectUrl: 'live-in-barcelona/transports',
+        redirectUrl: 'explore-barcelona/restaurants',
     },
     {
         imageUrl: '/Rectangle 33.png',
         title: 'Others',
-        redirectUrl: 'live-in-barcelona/transports',
+        redirectUrl: 'explore-barcelona/others',
     },
 ]);
 

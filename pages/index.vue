@@ -98,7 +98,7 @@
             <div class="flex flex-col ml-6 w-1/3 mt-12">
                 <div class="text-4xl font-bold">Want to get by in Spanish ? <b class="text-pink-500 font-bold">This</b> is the place !</div>
                 <div class="text-gray-500 mt-4">Discover the language and learn the basics to make yourself understood and live like a true Barcelonian</div>
-                <button class="h-12 w-32 bg-pink-600 hover:bg-pink-700 rounded-full font-normal mt-6 text-white">
+                <button @click="$router.push('/tips-and-tricks')" class="h-12 w-32 bg-pink-600 hover:bg-pink-700 rounded-full font-normal mt-6 text-white">
                     See more
                 </button>
             </div>

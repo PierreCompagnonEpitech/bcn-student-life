@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.5.0",
+    "@pinia/nuxt": "^0.5.1",
     "nuxt": "^3.11.2",
     "nuxt-leaflet": "^0.0.27",
+    "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-carousel-3d": "^1.0.1",
     "vue-router": "^4.3.0",
@@ -20,9 +22,12 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.11.4",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
     "mapbox-gl": "^3.3.0",
     "nuxt-aos": "^1.2.4",
     "nuxt-mapbox": "^1.5.9",
-    "nuxt-primevue": "^0.3.1"
+    "nuxt-primevue": "^0.3.1",
+    "nuxt3-leaflet": "^1.0.12",
+    "v-mapbox": "^5.0.0"
   }
 }

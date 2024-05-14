@@ -17,14 +17,18 @@
                 >
                     Explore Barcelona
                 </nav>
-                <nav class="hover:text-pink-600 lg:text-base text-xs hover:underline cursor-pointer">Tips and Tricks</nav>
+                <nav @click="$router.push('/tips-and-tricks')"
+                :class="{'text-pink-600 lg:text-base font-semibold text-xs cursor-pointer': tips, 'hover:text-pink-600 lg:text-base text-xs hover:underline cursor-pointer': !tips }"
+                >
+                    Tips and Tricks
+                </nav>
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
+import { computed } from 'vue';
 import { useRoute } from 'nuxt/app';
 
 const route = useRoute();
@@ -32,8 +36,12 @@ const route = useRoute();
 const live = computed(() => {
    return route.fullPath.includes('/live-in-barcelona');
 });
-   
+
 const explore = computed(() => {
    return route.fullPath.includes('/explore-barcelona');
+});
+
+const tips = computed(() => {
+   return route.fullPath.includes('/tips-and-tricks');
 });
 </script>
