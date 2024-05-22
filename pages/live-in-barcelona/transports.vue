@@ -7,8 +7,8 @@
         <div class="text-4xl mt-4 font-bold">Transport</div>
 
         <div class="text-gray-500 text-lg mt-8 ">
-            Barcelona has excellent public transport links. Metro, bus, streetcar,  bike... you'll
-            be spoilt for choice to get around the city and discover its different districts.
+            Barcelona has excellent public transport links. Metro, bus, streetcar,  bike... you'll have plenty of choice 
+            when it comes to getting around the city and discovering its different districts.
             The network of metro, bus, tram, and trains in Barcelona is very well-developed. 
             You can reach almost anywhere with the metro and tram. There are more than 230 bus 
             lines and an additional 30 night bus lines available, complemented by funiculars and cable cars.
@@ -44,8 +44,7 @@
             distance of the destination from the centre of Barcelona. The further the distance to the destination the 
             higher the zone number and the higher the cost of the transport ticket. The transport system includes buses,
             trams, and the metro system. The city is divided into six zones, with Zone 1 being the most central zone and
-            Zone 6 the outer most zone. Most tourist visitors to the city would only be interested in travelling in the
-            Zone 1 area which has all the major Barcelona tourist attrations including Gothic Quarter, Sagrada Familia,
+            Zone 6 the outer most zone. Zone 1 area is often the most interesting as it contains Gothic Quarter, Sagrada Familia,
             Casa Mila, Casa Battlo and FC Barcelona etc. Barcelona International Airport is included in Zone 1 however
             a special metro ticket is needed to travel to BCN airport from the city centre.
         </div>
