@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col relative border-gray-400 border-2 rounded-3xl h-[calc(35rem)] w-72 bg-gray-200 p-4">
+    <div class="flex flex-col relative border-gray-400 border-2 rounded-3xl h-[calc(30rem)] w-72 bg-gray-200 p-4">
 
         <img class="mt-5" :src="props.imageUrl" />
 
@@ -10,10 +10,10 @@
 
         <div id="badges"></div>
 
-        <div id="description" class="w-5/6 text-justify text-xs m-auto">
+        <div id="description" class="w-5/6 line-clamp-6 hover:line-clamp-non mt-4 text-justify text-xs ml-auto mr-auto">
             {{ props.description }}
         </div>
-        
+
         <button @click="redirect(props.redirectUrl)" class="absolute -bottom-5 left-1/2 transform -translate-x-1/2 border-gray-100 border-2 bg-gray-300 text-black px-16 py-2 rounded-full">
             Explore
         </button>

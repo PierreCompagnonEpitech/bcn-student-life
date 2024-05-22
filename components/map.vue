@@ -38,7 +38,12 @@
 
         <LMarker @click="redirect('https://www.google.es/maps/place/Tibidabo/@41.4261766,1.9752559,12z/data=!4m6!3m5!1s0x12a49789cff3db45:0xdb92ebc64b4e2a63!8m2!3d41.4225!4d2.118611!16zL20vMGtjNjI?hl=ca&entry=ttu')"
          :lat-lng="[41.426047872703656, 2.120653076506498]">
-            <LTooltip> Tibidabo </LTooltip>
+            <LTooltip>Mount Tibidabo </LTooltip>
+        </LMarker>
+
+        <LMarker @click="redirect('https://www.google.fr/maps/place/La+Rambla,+Barcelona/@41.3856127,2.1672417,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a258081714c9:0x24bef7ac8842bdc4!8m2!3d41.3856087!4d2.1698166!16zL20vMDNxODRr?hl=ca&entry=ttu')"
+         :lat-lng="[41.3857777126956, 2.1697951378723634]">
+            <LTooltip> La Rambla </LTooltip>
         </LMarker>
     </LMap>
 </template>

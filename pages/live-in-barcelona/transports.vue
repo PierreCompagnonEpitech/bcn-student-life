@@ -49,7 +49,11 @@
             Casa Mila, Casa Battlo and FC Barcelona etc. Barcelona International Airport is included in Zone 1 however
             a special metro ticket is needed to travel to BCN airport from the city centre.
         </div>
-
+        <NuxtImg 
+            src="/metromap.png"
+            height=""
+            width=""
+         />
         <div class="text-xl mt-20 ml-20 font-semibold">
             2. Tram🚊
         </div>
@@ -70,7 +74,10 @@
             Friday, Saturday and the evenings before public holidays from 5 am to 2 am; and 
             Sundays from 5 am to midnight.
         </div>
-
+        <NuxtImg 
+            src="/trambesos.png" />
+        <NuxtImg 
+            src="/trambaix.png" />
         <li class="text-pink-600 text-lg mt-6 ml-2">
             How to get ticket:
         </li>

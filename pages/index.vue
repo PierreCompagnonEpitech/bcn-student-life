@@ -8,15 +8,15 @@
                     <b class="text-pink-600 font-etrabold">Barcelona:</b> Get ready for your dream <b class="font-extrabold text-yellow-500">student adventure!</b>
                 </div>
                 <div class="text-gray-500 lg:text-xl w-5/ font-normal mt-2">
-                    <em>Studying in Barcelona ?</em> Your ultimate guide to setting in, integrating and making the most of this incredible city.
+                    <em>Studying in Epitech Barcelona ?</em> Your ultimate guide to setting in, integrating and making the most of this incredible city.
                 </div>
             </div>
 
             <div id="Images1" data-aos="flip-u" class="flex m-auto">
                 <NuxtImg
                     src="/Images.png"
-                    height="557"
-                    width="445"
+                    height="470"
+                    width="430"
                     loading="lazy"
                     preload
                 />

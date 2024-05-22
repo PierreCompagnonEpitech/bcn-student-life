@@ -2,8 +2,10 @@
     <div class="flex h-20 shadow-2xl w-full justify-center">
         <div class="flex flex-row items-center h-full bg-white justify-between w-4/5">
          
-            <div @click="$router.push('/')" id="Logo" class="cursor-pointer lg:text-2xl barlow-black">
-                BCN Student Life
+            <div id="Logo" class="flex lg:text-2xl barlow-black">
+                <b @click="$router.push('/')" class="mt-1 cursor-pointer">BCN Student Life</b>
+                <!-- <b class="font-light ml-2">by</b> -->
+                <NuxtImg src="/epilogo.png" class="bg- ml-2 w-10 h-10"/>
             </div>
 
             <div class="flex flex-row w-1/2 justify-around">

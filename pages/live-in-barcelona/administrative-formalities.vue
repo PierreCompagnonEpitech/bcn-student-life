@@ -140,7 +140,76 @@
             the same conditions as for the insured in the country that hosts you.
         </li>  
 
-        <div class="text-lg mt-16 font-semibold">Some useful links:</div>
+        <div class="text-lg text-pink-600 underline ml-20 mt-16 font-semibold">4.Bank account:</div>
+
+        <p class="text-gray-500 font-semibold text-lg mt-6">
+            Steps to follow
+        </p>
+
+        <li class="mt-5 ml-5 w-5/6">
+            <strong class="font-semibold">Choose a Bank: </strong> Compare different banks to find the one that offers
+             the best benefits for students, such as reduced account maintenance fees or special offers for young people.
+        </li>
+        <li class="mt-5 ml-5 w-5/6">
+            <strong class="font-semibold">Make an Appointment: </strong> Once you have selected a bank, 
+            schedule an appointment to open your account. Some banks also allow you to open an account online.
+        </li>
+        <li class="mt-5 ml-5 w-5/6">
+            <strong class="font-semibold">Visit the Bank: </strong> On the day of your appointment, bring 
+            all the required documents. The process of opening an account typically takes between 30 minutes to an hour.
+        </li>
+        <li class="mt-5 ml-5 w-5/6">
+            <strong class="font-semibold">Activate Your Account: </strong> Once your account is opened, you will receive
+            a debit card that you need to activate. You can also set up online banking access to manage your finances 
+            easily.
+        </li>
+
+        <p class="text-gray-500 font-semibold text-lg mt-6">
+            Documents usually required
+        </p>
+
+        <li class="mt-5 ml-5 w-5/6">
+            Passport or National ID Card: A valid passport or your national ID card is necessary.
+        </li>
+
+        <li class="mt-5 ml-5 w-5/6">
+            Certificate of Non-ResidencY
+        </li>
+
+        <li class="mt-5 ml-5 w-5/6">
+            Proof of Address
+        </li>
+
+        <li class="mt-5 ml-5 w-5/6">
+            Proof of Enrollment at the University
+        </li>
+       
+        <li class="mt-5 ml-5 w-5/6">
+            Foreigner Identification Number (NIE)
+        </li>
+
+        <p class="text-gray-500 font-semibold text-lg mt-6">
+            Popular Bank for Students
+        </p>
+
+        <li class="mt-5 ml-5 w-5/6">
+           <strong class="font-semibold"> La Caixa: </strong>
+           Offers specific accounts for students with reduced fees and comprehensive online services.
+        </li>
+
+        <li class="mt-5 ml-5 w-5/6">
+           <strong class="font-semibold"> BBVA: </strong>
+           Provides fee-free accounts for young people with a free debit card.
+        </li>
+
+        <li class="mt-5 ml-5 w-5/6">
+           <strong class="font-semibold">Sabadell: </strong>
+            Offers a youth account with advantageous conditions and good customer service.
+        </li>
+
+
+
+        <div class="text-lg mt-20 font-semibold">Some useful links:</div>
 
         <li class="mt-5 ml-10">
             <a class="text-pink-500" href="https://www.immigrationspain.es/en/visas-and-residence-permits-in-spain/">Visas and residence permits in Spain</a>

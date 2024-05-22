@@ -58,6 +58,11 @@ const tab = ref([
         title: 'Transport',
         redirectUrl: 'live-in-barcelona/transports',
     },
+    {
+        imageUrl: '/Rectangle444.png',
+        title: 'Lifestyle',
+        redirectUrl: 'live-in-barcelona/lifestyle',
+    },
 ]);
 
 </script>

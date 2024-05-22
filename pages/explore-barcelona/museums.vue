@@ -18,7 +18,7 @@
 
             <div class= "flex flex-wrap justify-between">
                 <Card2
-                    class="mt-12"
+                    class="mt-12 mb-12"
                     v-for="tab in tabs"
                     :key="tab.index"
                     :index="tab.index"

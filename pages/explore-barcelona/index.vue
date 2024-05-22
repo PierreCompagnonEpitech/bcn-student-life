@@ -56,19 +56,9 @@ const tab = ref([
         redirectUrl: 'explore-barcelona/parks',
     },
     {
-        imageUrl: '/Rectangle 29.png',
-        title: 'Attractions',
-        redirectUrl: 'explore-barcelona/attractions',
-    },
-    {
         imageUrl: '/Rectangle 31.png',
         title: 'Restaurants',
         redirectUrl: 'explore-barcelona/restaurants',
-    },
-    {
-        imageUrl: '/Rectangle 33.png',
-        title: 'Others',
-        redirectUrl: 'explore-barcelona/others',
     },
 ]);
 

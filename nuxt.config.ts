@@ -9,12 +9,15 @@ export default defineNuxtConfig({
     'nuxt-primevue',
     '@pinia/nuxt',
     'nuxt3-leaflet',
+    // '@twicpics/components/nuxt3',
   ],
 
+  // "twicpics": {
+  //   "domain": `https://<your-domain>.twic.pics`,
+  // },
   css: [
     "mapbox-gl/dist/mapbox-gl.css",
     "v-mapbox/dist/v-mapbox.css"
   ],
 
-  // plugins: [{ src: "~/plugins/v-mapbox", mode: "client" }]
 });

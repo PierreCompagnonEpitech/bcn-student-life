@@ -13,6 +13,10 @@
                 directions, and make your trip to Barcelona a breeze.
             </div>
 
+            <FlipCard 
+                :-front-side-title="'!ok go'"
+            />
+ 
             <li class="text-pink-600 text-lg mt-6 ml-2">
                 Greetings:
             </li>
@@ -45,7 +49,31 @@
                     I come from ... : <strong> (Yo) soy de ... </strong>
                 </li>
                 <li class="ml-12">
-                    Good Evening: <strong> Buenas noches </strong>
+                   Thanks you: <strong> Gracias </strong>
+                </li>
+                <li class="ml-12">
+                   Thanks you very much: <strong> Muchas Gracias </strong>
+                </li>
+                <li class="ml-12">
+                   You're welcome / No problem: <strong> De nada </strong>
+                </li>
+                <li class="ml-12">
+                   Please: <strong> Por favor </strong>
+                </li>
+                <li class="ml-12">
+                   Excuse me: <strong> iPerdon </strong>
+                </li>
+                <li class="ml-12">
+                   Sorry: <strong> iLo Siento </strong>
+                </li>
+                <li class="ml-12">
+                   I don't speak Spanish: <strong> No hablo español </strong>
+                </li>
+                <li class="ml-12">
+                    I don’t understand: <strong> No entiendo l </strong>
+                </li>
+                <li class="ml-12">
+                    I don’t understand: <strong> No entiendo l </strong>
                 </li>
             </div>
 
