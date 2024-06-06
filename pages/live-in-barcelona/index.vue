@@ -24,7 +24,7 @@
             <Card
                 class="mt-20"
                 v-for="index in tab" 
-                :imageUrl="index.imageUrl" 
+                :imageUrl="index.imageUrl"
                 :title="index.title"
                 :redirectUrl="index.redirectUrl"
             />
@@ -38,11 +38,6 @@
 import { ref } from 'vue';
 
 const tab = ref([
-    {
-        imageUrl: '/Rectangle22.png',
-        title: 'Book your plane ticket',
-        redirectUrl: 'live-in-barcelona/book-your-plane-ticket',
-    },
     {
         imageUrl: '/Rectangle23.png',
         title: 'Administrative formalities',

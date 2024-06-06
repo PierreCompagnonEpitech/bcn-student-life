@@ -13,6 +13,8 @@
                 directions, and make your trip to Barcelona a breeze.
             </div>
 
+            <div class="text-lg underlin mt-14 text-pink-500 ">Hover the card to see translation</div>
+
             <div class= "flex flex-wrap mb-12 justify-between">
                 <div class="flex items-center flex-col">
                     <p class="font-semibold flex text-pink-500 mb-5 mt-12 text-xl">Greetings</p>
