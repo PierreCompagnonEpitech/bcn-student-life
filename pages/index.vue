@@ -41,7 +41,7 @@
                 </button>
             </div>
 
-            <div id="Images1" data-aos="flip-u" class="flex hidden md:block m-auto">
+            <div id="Images1" data-aos="flip-u" class="flex hidden lg:block m-auto">
                 <NuxtImg class="ml-10"
                     src="/Images2.png"
                     width="440"
@@ -75,7 +75,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-row justify-between w-full mt-14">
+            <div class="flex flex-row lg:block hidden justify-between w-full mt-14">
                 <div class="flex flex-col items-center">
                     <NuxtImg src="/Rectangle1.png" width="300" height="420"  loading="lazy" preload/>
                     <div class="text-sm mt-2 underline text-blue-500 ">Casa Bastillo</div>

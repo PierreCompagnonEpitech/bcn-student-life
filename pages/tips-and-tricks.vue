@@ -13,10 +13,13 @@
                 directions, and make your trip to Barcelona a breeze.
             </div>
 
-            <div class="text-lg underlin mt-14 text-blue-500 ">Hover the card to see translation</div>
+            <div class="text-lg underlin lg:block hidden mt-14 text-blue-500 ">Hover the card to see translation</div>
+          
+            <div class="text-lg underlin lg:hidden mt-14 text-blue-500 mx-auto">Click the card to see translation</div>
 
             <div class= "flex flex-wrap mb-12 justify-between">
-                <div class="flex items-center flex-col">
+
+                <div class="flex items-center mx-auto flex-col">
                     <p class="font-semibold flex text-black mb-5 mt-12 text-xl">Greetings</p>
                     <FlipCard class
                         :-front-side-content1="'1. Hello'"
@@ -30,7 +33,7 @@
                     />
                 </div>
 
-                <div class="flex items-center flex-col">
+                <div class="flex items-center mx-auto flex-col">
                     <p class="font-semibold text-black mb-5 mt-12 text-xl">Basics</p>
                     <FlipCard class
                         :-front-side-content1="'1. My name is'"
@@ -52,7 +55,7 @@
                     />
                 </div>
 
-                <div class="flex items-center flex-col">
+                <div class="flex items-center mx-auto flex-col">
                     <p class="font-semibold text-black mb-5 mt-12 text-xl">Common Questions</p>
                     <FlipCard class
                         :-front-side-content1="'1. Where is ...?'"
@@ -68,7 +71,7 @@
                     />
                 </div>
 
-                <div class="flex items-center mt-12 flex-col">
+                <div class="flex items-center mx-auto mt-12 flex-col">
                     <p class="font-semibold text-black mb-5 mt-12 text-xl">Introductions and Personal Information</p>
                     <FlipCard class
                         :-front-side-content1="'1. Nice to meet you'"
@@ -84,7 +87,7 @@
                     />
                 </div>
 
-                <div class="flex items-center mt-12 flex-col">
+                <div class="flex items-center mx-auto mt-12 flex-col">
                     <p class="font-semibold text-black mb-5 mt-12 text-xl">Shopping</p>
                     <FlipCard class
                         :-front-side-content1="'1. I\'m looking for ...'"
@@ -99,7 +102,7 @@
                     />
                 </div>
 
-                <div class="flex items-center mt-12 flex-col">
+                <div class="flex items-center mx-auto mt-12 flex-col">
                     <p class="font-semibold text-black mb-5 mt-12 text-xl">Directions</p>
                     <FlipCard class
                         :-front-side-content1="'1. Left'"
