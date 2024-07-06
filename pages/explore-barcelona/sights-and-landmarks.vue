@@ -1,11 +1,11 @@
 <template>
     <Header />
         <div class="flex flex-col w-5/6 m-auto mt-16">
-            <div class="text-pink-600 font-semibold">Explore Barcelona</div>
+            <div class="text-blue-600 font-semibold">Explore Barcelona</div>
 
             <div class="flex flex-row justify-between w-">
                 <div class="text-4xl mt-4 font-bold">Sights and Landmarks</div>
-                <div @click="$router.push('my-favorites')" class="text-lg text-pink-500 mt-4 hover:underline cursor-pointer">My Favorites</div>
+                <div @click="$router.push('my-favorites')" class="text-lg text-blue-500 mt-4 hover:underline cursor-pointer">My Favorites</div>
             </div>
 
             <div class="mt-8 text-gray-500">
@@ -18,7 +18,7 @@
 
             <div class= "flex flex-wrap justify-between">
                 <Card2
-                    class="mt-12 mb-12"
+                    class="mt-12 mx-auto lg:mx-0 mb-12"
                     v-for="tab in tabs"
                     :key="tab.index"
                     :index="tab.index"

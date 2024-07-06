@@ -2,7 +2,7 @@
     <Header />
     <div class="flex flex-col w-5/6 m-auto mt-16">
 
-        <div class="text-pink-600 font-semibold">LIVE IN BARCELONA</div>
+        <div class="text-blue-600 font-semibold">LIVE IN BARCELONA</div>
 
         <div class="text-4xl mt-4 font-bold">Accomodation</div>
 
@@ -13,16 +13,16 @@
         </div>
 
         <!-- Card -->
-        <div id="card" v-for="item in items" class="flex mt-20 items-center justify-between m-auto flex-row">
-            <img :src="item.imageUrl" class="w-2/5"/>
+        <div id="card" v-for="item in items" class="flex mt-20 items-center justify-between m-auto flex-col lg:flex-row">
+            <img :src="item.imageUrl" class="lg:w-2/5"/>
 
-            <div class="flex justify-center w-1/2 flex-col">
-                <div class="text-xl text-pink-600 underline">{{ item.title }}</div>
+            <div class="flex justify-center lg:w-1/2 flex-col">
+                <div class="text-xl mx-auto lg:mx-0 lg:mt-0 mt-4 text-blue-600 underline">{{ item.title }}</div>
 
-                <div class="text-lg w-4/5 mt-4">{{ item.location }}</div>
+                <div class="text-lg lg:w-4/5 mx-auto lg:mx-0 lg:text-start text-center mt-4">{{ item.location }}</div>
 
                 <a  :href="item.redirectUrl"
-                    class="w-24 cursor-pointer mt-4 mb-2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-600 rounded-full hover:bg-pink-700 focus:ring-4 focus:outline-none focus:ring-pink-300"
+                    class="w-24 cursor-pointer mx-auto lg:mx-0 mt-4 mb-2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-600 rounded-full hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300"
                 >
                         Explore
                     <svg class="rtl:rotate-180 w-3 h-3 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -36,22 +36,22 @@
         <div class="mt-20 ml-8 text-xl font-semibold">Where else to look:</div>
 
         <li class="mt-5 ml-20">
-            <a class="text-pink-500" href="https://housinganywhere.com/">housinganywhere.com</a>
+            <a class="text-blue-500" href="https://housinganywhere.com/">housinganywhere.com</a>
         </li>
         <li class="ml-20">
-            <a class="text-pink-500" href="https://www.uniplaces.com/accommodation/barcelona">Uniplaces accomodations</a>
+            <a class="text-blue-500" href="https://www.uniplaces.com/accommodation/barcelona">Uniplaces accomodations</a>
         </li>
         <li class="ml-20">
-            <a class="text-pink-500" href="https://barcelona.tbs-education.com/student-services/accommodation/">Barcelona tbs education</a>
+            <a class="text-blue-500" href="https://barcelona.tbs-education.com/student-services/accommodation/">Barcelona tbs education</a>
         </li>
         <li class="ml-20">
-            <a class="text-pink-500" href="https://www.habitatgejove.com/webv2c/en/pisos.asp">habitatgejove.com</a>
+            <a class="text-blue-500" href="https://www.habitatgejove.com/webv2c/en/pisos.asp">habitatgejove.com</a>
         </li>
         <li class="ml-20">
-            <a class="text-pink-500" href="https://www.barcelonaresidencias.com/rooms-students-barcelona">barcelonaresidencias.com</a>
+            <a class="text-blue-500" href="https://www.barcelonaresidencias.com/rooms-students-barcelona">barcelonaresidencias.com</a>
         </li>
         <li class="ml-20">
-            <a class="text-pink-500" href="https://residencia-balmes.com/en/">residencia-balmes.com</a>
+            <a class="text-blue-500" href="https://residencia-balmes.com/en/">residencia-balmes.com</a>
         </li>
     </div>
     <Footer />

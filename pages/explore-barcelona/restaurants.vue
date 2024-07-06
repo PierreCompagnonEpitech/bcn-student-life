@@ -1,7 +1,7 @@
 <template>
     <Header />
         <div class="flex flex-col w-5/6 m-auto mt-16">
-            <div class="text-pink-600 font-semibold">Explore Barcelona</div>
+            <div class="text-blue-600 font-semibold">Explore Barcelona</div>
 
             <div class="text-4xl mt-4 font-bold">Restaurants</div>
 
@@ -15,7 +15,7 @@
 
             <div class= "flex flex-wrap justify-between">
                 <Card2
-                    class="mt-12"
+                    class="mt-12 mx-auto lg:mx-0"
                     v-for="tab in tabs"
                     :key="tab.index"
                     :index="tab.index"

@@ -91,11 +91,11 @@ const props = defineProps({
 }
 
 .card-front {
-  background-color: #6A2C70;
+  background-color: #6B8A7A;
   color: #fff;
   display: flex;
   align-items: center;
-  border: 10px solid #6A2C70;
+  border: 10px solid #6B8A7A;
   border-radius: 10px;
   justify-content: center;
   transform: rotateY(0deg);

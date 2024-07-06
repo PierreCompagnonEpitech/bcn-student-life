@@ -3,7 +3,7 @@
 
     <div class="flex flex-col w-5/6 m-auto mt-16">
 
-        <div class="text-pink-600 font-semibold">LIVE IN BARCELONA</div>
+        <div class="text-blue-600 font-semibold">LIVE IN BARCELONA</div>
 
         <div class="text-4xl mt-4 font-bold">LifeStyle</div>
 
@@ -18,7 +18,7 @@
                     cosmopolitan city? And what are the job opportunities for foreigners wishing to settle here?
                 </p>
 
-                <div class="text-lg text-pink-600 mt-12 font-semibold">1. Cost of Life:</div>
+                <div class="text-lg text-blue-600 mt-12 font-semibold">1. Cost of Life:</div>
 
                 <p class="text-base mt-4">
                     Barcelona, one of Spain's most vibrant and cosmopolitan cities, offers a relatively moderate cost of living 
@@ -41,7 +41,8 @@
 
             </div>
 
-            <NuxtImg src="/pic2.png" width="250" height="550" loading="lazy" preload/>
+            <NuxtImg class="lg:block hidden" src="/pic2.png" width="250" height="550" loading="lazy" preload/>
+
         </div>
 
         <div class="font-bold mt- text-lg">Utilities</div>
@@ -82,7 +83,7 @@
             </li>
         </div>
 
-        <div class="text-lg text-pink-600 mt-12 font-semibold">2. Job Search:</div>
+        <div class="text-lg text-blue-600 mt-12 font-semibold">2. Job Search:</div>
 
         <div class="ml-6 mt-2 w-4/5">
             <li class="mt-4">

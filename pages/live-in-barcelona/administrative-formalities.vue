@@ -3,7 +3,7 @@
 
     <div class="flex flex-col w-5/6 m-auto mt-16">
 
-        <div class="text-pink-600 font-semibold">LIVE IN BARCELONA</div>
+        <div class="text-blue-600 font-semibold">LIVE IN BARCELONA</div>
 
         <div class="text-4xl mt-4 font-bold">Administrative Formalities</div>
 
@@ -23,7 +23,7 @@
                     Formalities for entering Spain
                 </p>
 
-                <div class="text-lg text-pink-600 underline ml-20 mt-6 font-semibold">1.Student visa (if required):</div>
+                <div class="text-lg text-blue-600 underline ml-20 mt-6 font-semibold">1.Student visa (if required):</div>
 
                 <div class="ml-6 mt-5">
                     <li>
@@ -47,7 +47,7 @@
 
             </div>
 
-            <NuxtImg src="/pic2.png" width="250" height="550" loading="lazy" preload/>
+            <NuxtImg class="lg:block hidden" src="/pic2.png" width="250" height="550" loading="lazy" preload/>
         </div>
 
         <div class="ml-6 mt-5 w-4/5">
@@ -68,7 +68,7 @@
                 </li>
         </div>
 
-        <div class="text-lg text-pink-600 underline ml-20 mt-16 font-semibold">2.Residence permit (for stays of more than 3 months):</div>
+        <div class="text-lg text-blue-600 underline ml-20 mt-16 font-semibold">2.Residence permit (for stays of more than 3 months):</div>
 
         <div class="ml-6 mt-2 w-4/5">
             <li class="mt-4">
@@ -110,7 +110,7 @@
             </li>
         </div>
 
-        <div class="text-lg text-pink-600 underline ml-20 mt-16 font-semibold">3.Insurance:</div>
+        <div class="text-lg text-blue-600 underline ml-20 mt-16 font-semibold">3.Insurance:</div>
 
         <li class="mt-5 ml-5 w-5/6">
             For students wishing to do an internship, it is imperative to take out a complementary medical 
@@ -140,7 +140,7 @@
             the same conditions as for the insured in the country that hosts you.
         </li>  
 
-        <div class="text-lg text-pink-600 underline ml-20 mt-16 font-semibold">4.Bank account:</div>
+        <div class="text-lg text-blue-600 underline ml-20 mt-16 font-semibold">4.Bank account:</div>
 
         <p class="text-gray-500 font-semibold text-lg mt-6">
             Steps to follow
@@ -212,16 +212,16 @@
         <div class="text-lg mt-20 font-semibold">Some useful links:</div>
 
         <li class="mt-5 ml-10">
-            <a class="text-pink-500" href="https://www.immigrationspain.es/en/visas-and-residence-permits-in-spain/">Visas and residence permits in Spain</a>
+            <a class="text-blue-500" href="https://www.immigrationspain.es/en/visas-and-residence-permits-in-spain/">Visas and residence permits in Spain</a>
         </li>
         <li class="ml-10">
-            <a class="text-pink-500" href="https://www.exteriores.gob.es/Consulados/paris/fr/ServiciosConsulares/Paginas/Consular/Visados-nacionales-Informacion-general.aspx">Spanish consulate</a>
+            <a class="text-blue-500" href="https://www.exteriores.gob.es/Consulados/paris/fr/ServiciosConsulares/Paginas/Consular/Visados-nacionales-Informacion-general.aspx">Spanish consulate</a>
         </li>
         <li class="ml-10">
-            <a class="text-pink-500" href="https://www.spain.info/en/travel-tips/visa-passport/">Informations about Visas</a>
+            <a class="text-blue-500" href="https://www.spain.info/en/travel-tips/visa-passport/">Informations about Visas</a>
         </li>
         <li class="ml-10">
-            <a class="text-pink-500" href="https://www.studying-in-spain.com/homepage/">Studying in Spain</a>
+            <a class="text-blue-500" href="https://www.studying-in-spain.com/homepage/">Studying in Spain</a>
         </li>
 
     </div>

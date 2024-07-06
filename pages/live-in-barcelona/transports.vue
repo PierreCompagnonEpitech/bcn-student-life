@@ -2,7 +2,7 @@
     <Header />
 
     <div class="flex flex-col w-5/6 m-auto mt-16">
-        <div class="text-pink-600 font-semibold">LIVE IN BARCELONA</div>
+        <div class="text-blue-600 font-semibold">LIVE IN BARCELONA</div>
 
         <div class="text-4xl mt-4 font-bold">Transport</div>
 
@@ -18,7 +18,7 @@
             1. Metro🚋
         </div>
 
-        <li class="text-pink-600 text-lg mt-6 ml-2">
+        <li class="text-blue-600 text-lg mt-6 ml-2">
             Discovering Barcelona's Metro:
         </li>
         <div class="mt-4">
@@ -35,7 +35,7 @@
             T-usual, which offers unlimited travel for 30 successive days
         </div>
 
-        <li class="text-pink-600 text-lg mt-6 ml-2">
+        <li class="text-blue-600 text-lg mt-6 ml-2">
             Metro zone system:
         </li>
 
@@ -57,7 +57,7 @@
             2. Tram🚊
         </div>
 
-        <li class="text-pink-600 text-lg mt-6 ml-2">
+        <li class="text-blue-600 text-lg mt-6 ml-2">
             Tram functionnement:
         </li>
 
@@ -77,7 +77,7 @@
             src="/trambesos.png" />
         <NuxtImg 
             src="/trambaix.png" />
-        <li class="text-pink-600 text-lg mt-6 ml-2">
+        <li class="text-blue-600 text-lg mt-6 ml-2">
             How to get ticket:
         </li>
 
@@ -98,7 +98,7 @@
             3. Bus🚌
         </div>
 
-        <li class="text-pink-600 text-lg mt-6 ml-2">
+        <li class="text-blue-600 text-lg mt-6 ml-2">
            Bus at Barcelona:
         </li>
 
@@ -110,7 +110,7 @@
             night-time lines.
         </div>
 
-        <li class="text-pink-600 text-lg mt-6 ml-2">
+        <li class="text-blue-600 text-lg mt-6 ml-2">
             Tickets et Timetable
         </li>
 
@@ -126,7 +126,7 @@
             4. Bike🚴🏽‍♂️
         </div>
 
-        <li class="text-pink-600 text-lg mt-6 ml-2">
+        <li class="text-blue-600 text-lg mt-6 ml-2">
             Biking in Barcelona:
         </li>
 
@@ -136,7 +136,7 @@
             it an economical choice for exploring the city. Also, Trams and Metros have designated areas for bikes
         </div>
 
-        <li class="text-pink-600 text-lg mt-6 ml-2">
+        <li class="text-blue-600 text-lg mt-6 ml-2">
             Bicing
         </li>
 
@@ -149,13 +149,13 @@
         <div class="mt-20  text-xl font-semibold">For more information:</div>
 
         <li class="mt-5 ml-4">
-            <a class="text-pink-500" href="https://www.barcelona-tourist-guide.com/en/transport/00-transport.html">barcelona-tourist-guide.com</a>
+            <a class="text-blue-500" href="https://www.barcelona-tourist-guide.com/en/transport/00-transport.html">barcelona-tourist-guide.com</a>
         </li>
         <li class="ml-4">
-            <a class="text-pink-500" href="https://www.barcelonaturisme.com/wv3/en/page/59/bus.html">barcelonaturisme.com</a>
+            <a class="text-blue-500" href="https://www.barcelonaturisme.com/wv3/en/page/59/bus.html">barcelonaturisme.com</a>
         </li>
         <li class="ml-4">
-            <a class="text-pink-500" href="https://www.barcelona.cat/internationalwelcome/en/bicing-barcelona-public-bicycle-service">Bicing Barcelona</a>
+            <a class="text-blue-500" href="https://www.barcelona.cat/internationalwelcome/en/bicing-barcelona-public-bicycle-service">Bicing Barcelona</a>
         </li>
     </div>
 

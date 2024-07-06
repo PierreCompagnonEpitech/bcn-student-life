@@ -1,7 +1,7 @@
 <template>
     <Header />
         <div class="flex flex-col w-5/6 m-auto mt-16">
-            <div class="text-pink-600 font-semibold">Tips ans Tricks</div>
+            <div class="text-blue-600 font-semibold">Tips ans Tricks</div>
 
             <div class="text-4xl mt-4 font-bold">Spanish Essentials for your Trip</div>
 
@@ -13,11 +13,11 @@
                 directions, and make your trip to Barcelona a breeze.
             </div>
 
-            <div class="text-lg underlin mt-14 text-pink-500 ">Hover the card to see translation</div>
+            <div class="text-lg underlin mt-14 text-blue-500 ">Hover the card to see translation</div>
 
             <div class= "flex flex-wrap mb-12 justify-between">
                 <div class="flex items-center flex-col">
-                    <p class="font-semibold flex text-pink-500 mb-5 mt-12 text-xl">Greetings</p>
+                    <p class="font-semibold flex text-black mb-5 mt-12 text-xl">Greetings</p>
                     <FlipCard class
                         :-front-side-content1="'1. Hello'"
                         :-front-side-content2="'2. Good Morning'"
@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="flex items-center flex-col">
-                    <p class="font-semibold text-pink-500 mb-5 mt-12 text-xl">Basics</p>
+                    <p class="font-semibold text-black mb-5 mt-12 text-xl">Basics</p>
                     <FlipCard class
                         :-front-side-content1="'1. My name is'"
                         :-front-side-content2="'2. I am ... years old'"
@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="flex items-center flex-col">
-                    <p class="font-semibold text-pink-500 mb-5 mt-12 text-xl">Common Questions</p>
+                    <p class="font-semibold text-black mb-5 mt-12 text-xl">Common Questions</p>
                     <FlipCard class
                         :-front-side-content1="'1. Where is ...?'"
                         :-front-side-content2="'2. How much is it?'"
@@ -69,7 +69,7 @@
                 </div>
 
                 <div class="flex items-center mt-12 flex-col">
-                    <p class="font-semibold text-pink-500 mb-5 mt-12 text-xl">Introductions and Personal Information</p>
+                    <p class="font-semibold text-black mb-5 mt-12 text-xl">Introductions and Personal Information</p>
                     <FlipCard class
                         :-front-side-content1="'1. Nice to meet you'"
                         :-front-side-content2="'2. How are you?'"
@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="flex items-center mt-12 flex-col">
-                    <p class="font-semibold text-pink-500 mb-5 mt-12 text-xl">Shopping</p>
+                    <p class="font-semibold text-black mb-5 mt-12 text-xl">Shopping</p>
                     <FlipCard class
                         :-front-side-content1="'1. I\'m looking for ...'"
                         :-front-side-content2="'2. Do you have ...?'"
@@ -100,7 +100,7 @@
                 </div>
 
                 <div class="flex items-center mt-12 flex-col">
-                    <p class="font-semibold text-pink-500 mb-5 mt-12 text-xl">Directions</p>
+                    <p class="font-semibold text-black mb-5 mt-12 text-xl">Directions</p>
                     <FlipCard class
                         :-front-side-content1="'1. Left'"
                         :-front-side-content2="'2. Right'"
@@ -116,7 +116,7 @@
                 </div>
             </div>
 
-            <!-- <li class="text-pink-600 text-lg mt-6 ml-2">
+            <!-- <li class="text-blue-600 text-lg mt-6 ml-2">
                 Greetings:
             </li>
             <div class="mt-4">
@@ -135,7 +135,7 @@
             </div>
  -->
 
-            <!-- <li class="text-pink-600 text-lg mt-6 ml-2">
+            <!-- <li class="text-blue-600 text-lg mt-6 ml-2">
                 Basics:
             </li>
             <div class="mt-4">

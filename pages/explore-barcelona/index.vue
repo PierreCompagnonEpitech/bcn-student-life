@@ -3,11 +3,11 @@
     
     <div class="flex flex-col justify-center w-5/6 m-auto items-center">
         <div id="Text1" class="flex flex-col lg:justify-start m-auto  lg:mt-12 barlow-bold justify-center">
-            <div class="text-pink-600 font-normal mt-2">
+            <div class="text-blue-600 font-normal mt-2">
                 EXPLORE BARCELONA
             </div>
             <div class="text-2xl font-extrabold lg:text-4xl">
-                Barcelona must-sees: Your guide to <b class="font-bold text-pink-500">the best</b> adresses 
+                Barcelona must-sees: Your guide to <b class="font-bold text-blue-500">the best</b> adresses 
             </div>
         </div>
 
@@ -24,7 +24,7 @@
 
         <div class= "flex flex-wrap justify-between">
             <Card
-                class="mt-20"
+            class="lg:m-0 m-auto mt-20"
                 v-for="index in tab" 
                 :imageUrl="index.imageUrl" 
                 :title="index.title"

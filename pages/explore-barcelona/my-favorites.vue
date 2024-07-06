@@ -1,13 +1,13 @@
 <template>
     <Header />
         <div class="flex flex-col w-5/6 m-auto mt-16">
-            <div class="text-pink-600 font-semibold">Explore Barcelona</div>
+            <div class="text-blue-600 font-semibold">Explore Barcelona</div>
 
             <div class="text-3xl mt-4 font-bold">My Favorites</div>
 
             <div class= "flex flex-wrap justify-between">
                 <Card2
-                    class="mt-14"
+                    class="mx-auto lg:mx-0 mt-14"
                     v-for="tab in favorites"
                     :index="tab.index"
                     :imageUrl="tab.imageUrl"
