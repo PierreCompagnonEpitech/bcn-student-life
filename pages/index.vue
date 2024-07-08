@@ -75,18 +75,18 @@
                 </div>
             </div>
 
-            <div class="flex flex-row lg:block hidden justify-between w-full mt-14">
-                <div class="flex flex-col items-center">
+            <div class="flex flex-wrap lg:flex-row justify-between w-full mt-14">
+                <div class="flex flex-col lg:block hidden m-auto items-center">
                     <NuxtImg src="/Rectangle1.png" width="300" height="420"  loading="lazy" preload/>
-                    <div class="text-sm mt-2 underline text-blue-500 ">Casa Bastillo</div>
+                    <div class="text-sm mt-2 ml-28 underline text-blue-500 ">Casa Bastillo</div>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col lg:block hidden m-auto items-center">
                     <NuxtImg src="/Rectangle2.png" width="300" height="420" loading="lazy" preload/>
-                    <div class="text-sm mt-2 underline text-blue-500 ">Arc de Triumf</div>
+                    <div class="text-sm ml-28 mt-2 underline text-blue-500 ">Arc de Triumf</div>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col m-auto lg:block hidden items-center">
                     <NuxtImg src="/Rectangle3.png" width="300" height="420" loading="lazy" preload/>
-                    <div class="text-sm mt-2 underline text-blue-500 ">Parc Guel</div>
+                    <div class="text-sm ml-28 mt-2 underline text-blue-500 ">Parc Guel</div>
                 </div>
             </div>
         </div>
