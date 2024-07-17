@@ -18,7 +18,7 @@
                     cosmopolitan city? And what are the job opportunities for foreigners wishing to settle here?
                 </p>
 
-                <div class="text-lg text-blue-600 mt-12 font-semibold">1. Cost of Life:</div>
+                <div class="text-lg text-blue-600 mt-12 font-semibold">Cost of Life:</div>
 
                 <p class="text-base mt-4">
                     Barcelona, one of Spain's most vibrant and cosmopolitan cities, offers a relatively moderate cost of living 
@@ -83,7 +83,7 @@
             </li>
         </div>
 
-        <div class="text-lg text-blue-600 mt-12 font-semibold">2. Job Search:</div>
+        <!-- <div class="text-lg text-blue-600 mt-12 font-semibold">2. Job Search:</div>
 
         <div class="ml-6 mt-2 w-4/5">
             <li class="mt-4">
@@ -123,7 +123,7 @@
                 available below), you will fill a form and select the best appointment based on their proximity
                 to you or their date.                
             </li>
-        </div>
+        </div> -->
     </div>
 
     <Footer />

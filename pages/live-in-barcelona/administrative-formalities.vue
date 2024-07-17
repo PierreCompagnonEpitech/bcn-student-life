@@ -129,18 +129,33 @@
         </li>
 
         <li class="mt-5 ml-5 w-5/6">
-            You have no documents to provide. This card is valid for one year. If, upon receipt of your card,
-            your card indicates cover until December of the calendar year, please apply again in October / November
-            of the fourth year so that it covers the rest of the school year (up to 'to June).
-        </li>
-
-        <li class="mt-5 ml-5 w-5/6">
             At the doctor, the pharmacist and in public service hospitals, present your card or your provisional 
             certificate. Thanks to your European health insurance card, your medical expenses are covered under 
             the same conditions as for the insured in the country that hosts you.
         </li>  
 
-        <div class="text-lg text-blue-600 underline ml-20 mt-16 font-semibold">4.Bank account:</div>
+        <div class="text-lg text-blue-600 underline ml-20 mt-16 font-semibold">4.Social Security:</div>
+
+        <li class="mt-5 ml-5 w-5/6">
+            To be officially registered and benefit from social security, you must have your health insurance card. 
+            To apply, you must have your NIE and be registered in Catalonia.
+        </li>
+
+        <li class="mt-5 ml-5 w-5/6">
+            To obtain your national insurance number you must go to one of the social security offices. This number is
+            essential for the rest of the process. It simply means that you are registered but not that you are covered.
+            You will then need to send this number to your company so that it can finalise the procedure.
+        </li>
+
+        <li class="mt-5 ml-5 w-5/6">
+            The individual health card - or tarjeta sanitaria individual (TSI) in Spanish - must be applied for at the
+            health centre - centro de atencion primaria - in your neighbourhood. Depending on where you live, you will
+            need to go to the nearest CAP. All you need to show at reception is some form of identification, the NIE, 
+            the padron and the document showing your national insurance number. You will receive your card by post 
+            approximately two weeks later.
+        </li>
+
+        <div class="text-lg text-blue-600 underline ml-20 mt-16 font-semibold">5.Bank account:</div>
 
         <p class="text-gray-500 font-semibold text-lg mt-6">
             Steps to follow
@@ -212,6 +227,9 @@
         <div class="text-lg mt-20 font-semibold">Some useful links:</div>
 
         <li class="mt-5 ml-10">
+            <a class="text-blue-500" href="https://n26.com/en-fr/open-bank-account-in-spain">Open a Spanish bank account online with zero paperwork</a>
+        </li>
+        <li class="ml-10">
             <a class="text-blue-500" href="https://www.immigrationspain.es/en/visas-and-residence-permits-in-spain/">Visas and residence permits in Spain</a>
         </li>
         <li class="ml-10">

@@ -200,9 +200,58 @@ export const useSightStore = defineStore('sights', {
           redirectUrl: 'https://www.barcelona.cat/en/que-pots-fer-a-bcn/parcs-i-jardins/parc-de-joan-miro-92086012013',
           isLiked: false,
         },
+      ],
+      restaurantsTab: [
+        {
+          index: 18,
+          imageUrl: '/tagliatella.jpg',
+          title: 'La Tagliatella',
+          description: 'La Tagliatella stands at the foot of the hill of Montjüic, on the top floor of Barcelona’s Las Arenas Mall, a building designed by the British architect Richard Rogers in collaboration with Alonso Balaguer Arquitecto Asociados.',
+          redirectUrl: 'https://www.latagliatella.es/restaurantes/barcelona/cc-las-arenas-barcelona',
+          isLiked: false,
+        },
+        {
+          index: 19,
+          imageUrl: '/elsalon.png',
+          title: 'El Salón',
+          description: 'The Salón Restaurant opened in 1995 as the first bistro restaurant in Barcelona. Located in the iconic and energetic Gothic Quarter of the city, it has been characterised by a cuisine based on high quality local, and seasonal products with a wide variety of Mediterranean flavours and scents.It’s homemade, healthy style creates a great experience for the most demanding locals and visitors from around the world. Since its inception, the Salón maintains a casual and bohemian feel with recycled furniture and everyday objects that give a warm and informal feeling of home, transmitting its characteristic personal style. The outdoor terrace, located in the Plaça Traginers next to the Roman city wall and its views, make the culinary experience intimate and unforgettable.',
+          redirectUrl: 'http://www.elsalonrestaurant.com/',
+          isLiked: false,
+        },
+        {
+          index: 20,
+          imageUrl: '/elricon.png',
+          title: 'El Rincón',
+          description: 'It is located a few meters from the famous market of La Boquería and the Ramblas of Barcelona, with more than 40 years of history you will find a place with a comfortable and cozy atmosphere where you will be surprise by our varied and modern cuisine with unique flavors.',
+          redirectUrl: 'https://www.elrinconbarcelona.com/en/inicio-english/',
+          isLiked: false,
+        },
+        {
+          index: 21,
+          imageUrl: '/antic.png',
+          title: 'Antic Bocoi del Gotic',
+          description: 'The Antic Bocoi del Gotic occupies a historic building dating back to the 18th century, which gives it a special charm. Its traditional and careful decoration will transport you to another era, allowing you to enjoy an authentic and cozy experience.',
+          redirectUrl: 'https://www.barcelona.zone/restaurant-antic-bocoi-gotic',
+          isLiked: false,
+        },
+        {
+          index: 22,
+          imageUrl: '/ladesa.png',
+          title: 'La Desayunería',
+          description: 'At La Desayunería you can find authentic American Breakfast style breakfasts, served all day long. La Desayunería was born from a trip to the United States where the only thing we wanted to eat were breakfast dishes. Eggs, milkshakes, pancakes, bacon, omelettes, grilled cheese, all these dishes were our source of nourishment during our trip across North America.',
+          redirectUrl: 'https://www.instagram.com/massa_pasta.bcn/',
+          isLiked: false,
+        },
+        {
+          index: 23,
+          imageUrl: '/viana.png',
+          title: 'Viana Barcelona',
+          description: 'A gastronomic oasis, in two beautiful locations, just a few meters from Plaza Real',
+          redirectUrl: 'https://www.vianabcn.com/en/',
+          isLiked: false,
+        },
       ]
     }
   },
-
   persist: true,
 });

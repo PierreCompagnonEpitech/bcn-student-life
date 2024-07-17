@@ -38,7 +38,7 @@ import { useSightStore } from '~/stores/sights';
 const sights = useSightStore();
 const isLiked = ref(false);
 
-const tabs = ref(sights.sightsTab);
+const tabs = ref(sights.restaurantsTab);
 
 onBeforeMount(() => {
     let cookie = null;

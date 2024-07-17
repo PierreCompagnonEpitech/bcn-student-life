@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     'nuxt-primevue',
     '@pinia/nuxt',
     'nuxt3-leaflet',
-    // '@twicpics/components/nuxt3',
+    "vue3-carousel-nuxt"
   ],
 
   // "twicpics": {

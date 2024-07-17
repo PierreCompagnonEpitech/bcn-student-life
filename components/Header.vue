@@ -25,6 +25,11 @@
                 >
                     Tips and Tricks
                 </nav>
+                <nav @click="$router.push('/epitech-barcelona')"
+                :class="{'text-blue-600 lg:text-base font-semibold text-xs cursor-pointer': epitech, 'hover:text-blue-600 lg:text-base text-xs hover:underline cursor-pointer': !epitech }"
+                >
+                    Epitech Barcelona
+                </nav>
             </div>
         </div>
     </div>
@@ -46,5 +51,9 @@ const explore = computed(() => {
 
 const tips = computed(() => {
    return route.fullPath.includes('/tips-and-tricks');
+});
+
+const epitech = computed(() => {
+   return route.fullPath.includes('/epitech-barcelona');
 });
 </script>

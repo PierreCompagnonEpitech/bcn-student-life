@@ -52,16 +52,6 @@ onBeforeMount(() => {
     console.log('tabs2: ', tabs2.value);
 });
 
-// onMounted(() => {
-//     let cookie = null;
-
-//     for (let i = 0; i < 50; i++) {
-//         cookie = useCookie(i);
-//         if (cookie.value)
-//             tabs.value[i].isLiked = cookie.value;
-//     }
-// });
-
 const addLikedPlaceToFav = (obj) => {
     const cookie = useCookie(obj.index);
     cookie.value = obj.isLiked;
