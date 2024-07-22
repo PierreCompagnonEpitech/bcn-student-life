@@ -14,7 +14,7 @@
 
         <!-- Card -->
         <div id="card" v-for="item in items" class="flex mt-20 items-center justify-between m-auto flex-col lg:flex-row">
-            <img :src="item.imageUrl" class="lg:w-2/5"/>
+            <img :src="item.imageUrl" class="lg:w-2/5 w-full"/>
 
             <div class="flex justify-center lg:w-1/2 flex-col">
                 <div class="text-xl mx-auto lg:mx-0 lg:mt-0 mt-4 text-blue-600 underline">{{ item.title }}</div>
@@ -39,6 +39,10 @@
             <a class="text-blue-500" href="https://housinganywhere.com/">housinganywhere.com</a>
         </li>
         <li class="ml-20">
+            <a class="text-blue-500" href="https://www.happycasa.es/en/">happycasa.com</a>
+        </li>
+
+        <li class="ml-20">
             <a class="text-blue-500" href="https://www.uniplaces.com/accommodation/barcelona">Uniplaces accomodations</a>
         </li>
         <li class="ml-20">
@@ -52,6 +56,12 @@
         </li>
         <li class="ml-20">
             <a class="text-blue-500" href="https://residencia-balmes.com/en/">residencia-balmes.com</a>
+        </li>
+        <li class="ml-20">
+            <a class="text-blue-500" href="https://www.locabarcelona.com/es/">locabarcelona.com</a>
+        </li>
+        <li class="ml-20">
+            <a class="text-blue-500" href="https://www.spotahome.com/s/barcelona">spotahome.com</a>
         </li>
     </div>
     <Footer />

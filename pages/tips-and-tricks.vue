@@ -17,7 +17,7 @@
           
             <div class="text-lg underlin lg:hidden mt-14 text-blue-500 mx-auto">Click the card to see translation</div>
 
-            <div class= "flex flex-wrap mb-12 justify-between">
+            <div class= "flex flex-wrap m-auto mb-12 justify-between">
 
                 <div class="flex items-center mx-auto flex-col">
                     <p class="font-semibold flex text-black mb-5 mt-12 text-xl">Greetings</p>
@@ -71,7 +71,7 @@
                     />
                 </div>
 
-                <div class="flex items-center mx-auto mt-12 flex-col">
+                <div class="flex items-center mx-auto mt12 flex-col">
                     <p class="font-semibold text-black mb-5 mt-12 text-xl">Introductions and Personal Information</p>
                     <FlipCard class
                         :-front-side-content1="'1. Nice to meet you'"
@@ -87,7 +87,7 @@
                     />
                 </div>
 
-                <div class="flex items-center mx-auto mt-12 flex-col">
+                <div class="flex items-center mx-auto mt12 flex-col">
                     <p class="font-semibold text-black mb-5 mt-12 text-xl">Shopping</p>
                     <FlipCard class
                         :-front-side-content1="'1. I\'m looking for ...'"
@@ -102,7 +102,7 @@
                     />
                 </div>
 
-                <div class="flex items-center mx-auto mt-12 flex-col">
+                <div class="flex items-center mx-aut mt12 flex-col">
                     <p class="font-semibold text-black mb-5 mt-12 text-xl">Directions</p>
                     <FlipCard class
                         :-front-side-content1="'1. Left'"

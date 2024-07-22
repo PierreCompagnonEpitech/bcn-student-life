@@ -22,7 +22,7 @@
             into Barcelona's cool past, present, and future.
         </div>
 
-        <div class= "flex flex-wrap justify-between">
+        <div class= "flex flex-wrap w-full justify-between">
             <Card
             class="lg:mx-0 mx-auto mt-20"
                 v-for="index in tab" 

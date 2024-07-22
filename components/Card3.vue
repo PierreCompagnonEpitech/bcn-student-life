@@ -1,5 +1,5 @@
 <template>
-    <div id="card" class="flex lg:bg-gray-100 rounded-3xl items-center m-auto flex-col lg:flex-row">
+    <div id="card" class="flex lg:bg-gray-100 rounded-3xl justify-between items-center m-auto flex-col lg:flex-row">
         
         <div class="relative">
          <img :src="props.imageUrl" class="lg:w-5/6"/>
@@ -8,7 +8,7 @@
             </div>
         </div>
 
-        <div class="flex justify-center lg:w-1/3 flex-col">
+        <div class="flex justify-center lg:mr-32 lg:w-1/3 flex-col">
             <div class="text-xl mx-auto lg:mx-0 lg:mt-0 mt-4 text-center text-blue-600 ">{{ props.title }}</div>
 
             <div class=" mx-auto lg:mx-0 text-center mt-4">{{ props.desc }}</div>
