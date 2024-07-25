@@ -36,6 +36,10 @@
         <div class="mt-20 ml-8 text-xl font-semibold">Where else to look:</div>
 
         <li class="mt-5 ml-20">
+            <a class="text-blue-500" href="https://www.idealista.com/">Idealista</a>
+            <p> Same as "Leboncoin" in France</p>
+        </li>
+        <li class="mt-5 ml-20">
             <a class="text-blue-500" href="https://housinganywhere.com/">housinganywhere.com</a>
         </li>
         <li class="ml-20">
