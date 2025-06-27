@@ -1,118 +1,745 @@
 <template>
-    <div>
-        <Header />
-    <!-- First Block -->
-        <div id="FirstBlock" class="flex flex-col w-5/6 m-auto md:flex-row mt-12 justify-center">
-            <div id="Text1" class="flex flex-col lg:justify-start m-auto lg:mt-24 barlow-bold justify-center items-center w-full lg:w-1/2">
-                <div class="text-3xl lg:text-6xl">
-                    <b class="text-blue-700 font-etrabold">Barcelona:</b> Get ready for your dream <b class="font-extrabold text-blue-400">student adventure!</b>
-                </div>
-                <div class="text-gray-500 lg:text-xl w-5/ font-normal mt-2">
-                    <em>Studying in Epitech Barcelona ?</em> Your ultimate guide to setting in, integrating and making the most of this incredible city.
-                </div>
-            </div>
+  <div class="min-h-screen bg-white">
+    <!-- Header -->
+    <Header />
 
-            <div id="Images1" data-aos="flip-u" class="flex m-auto">
-                <NuxtImg
-                    src="/Images.png"
-                    height="470"
-                    width="430"
-                    loading="lazy"
-                    preload
-                />
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden py-20 lg:py-32">
+      <div class="absolute inset-0 bg-white"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="text-center lg:text-left">
+            <div
+              class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6"
+            >
+              <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              Study Abroad Program
             </div>
+            <h1
+              class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
+            >
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"
+                >Barcelona:</span
+              >
+              <br />Your Dream
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600"
+                >Student Adventure</span
+              >
+              Awaits!
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+              <em>Studying at EPITECH Barcelona?</em> Your ultimate guide to
+              settling in, integrating, and making the most of this incredible
+              Mediterranean city.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            >
+              <button
+                class="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+              >
+                Start Your Journey
+              </button>
+              <button
+                class="px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
+              >
+              <a href="https://www.youtube.com/watch?v=k8wFUbpFp1Y&pp=ygURZXBpdGVjaCBiYXJjZWxvbmHSBwkJwwkBhyohjO8%3D" 
+                 target="_blank" rel="noopener noreferrer">
+                Watch Video
+              </a>
+              </button>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-3xl transform rotate-6 opacity-20"
+            ></div>
+            <div class="relative bg-white rounded-3xl shadow-2xl p-8">
+              <img
+                src="/Campus-EPITECH-Bcn.png"
+                alt="Barcelona Student Life"
+                class="w-full h-96 object-cover rounded-2xl"
+              />
+            </div>
+          </div>
         </div>
-    <!-- First Block -->
+      </div>
+    </section>
 
-    <!-- Second Block -->
-        <div id="SecondBlock" class="flex flex-col lg:m-auto lg:flex-row-reverse lg:justify-center">
-            <div id="Text1" class="flex flex-col lg:justify-start m-auto lg:mt-12 barlow-bold item justify-center w-full lg:w-1/2">
-                <div class="text-blue-700 lg:mx-0 mx-auto lg:w-5/6 font-normal mt-20 lg:mt-2">
-                    LIVE IN BARCELONA
+    <!-- Live in Barcelona Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="relative order-2 lg:order-1">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="space-y-4">
+                <div
+                  class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300"
+                >
+                  <div
+                    class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-4"
+                  >
+                    <svg
+                      class="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="font-bold text-gray-900 mb-2">Housing</h3>
+                  <p class="text-gray-600 text-sm">Find your perfect home</p>
                 </div>
-                <div class="text-2xl w-5/6 lg:text-start text-center lg:mx-0 mx-auto lg:text-5xl lg:w-4/5">
-                    Barcelona opens its doors to you: Get <b class="font-bold text-blue-600">ready</b> for student life !
+                <div
+                  class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300"
+                >
+                  <div
+                    class="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center mb-4"
+                  >
+                    <svg
+                      class="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2V6"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="font-bold text-gray-900 mb-2">Jobs</h3>
+                  <p class="text-gray-600 text-sm">Student opportunities</p>
                 </div>
-                <div class="text-gray-500 lg:mx-0 lg:text-start text-center mx-auto lg:text-xl w-4/5 font-normal mt-2">
-                    Find out everything you need to make the most of your stay in Barcelona. From finding accommodation and jobs to discovering the city's best restaurants, bars and attractions and other tips!
+              </div>
+              <div class="space-y-4">
+                <div
+                  class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300"
+                >
+                  <div
+                    class="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center mb-4"
+                  >
+                    <svg
+                      class="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="font-bold text-gray-900 mb-2">Transport</h3>
+                  <p class="text-gray-600 text-sm">Navigate the city</p>
                 </div>
-                <button @click="$router.push('live-in-barcelona')" class="h-12 lg:mx-0 mx-auto w-32 bg-blue-600 hover:bg-blue-700 rounded-full font-normal mt-6 text-white">
-                    See more
-                </button>
+                <div
+                  class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300"
+                >
+                  <div
+                    class="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center mb-4"
+                  >
+                    <svg
+                      class="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3 class="font-bold text-gray-900 mb-2">Culture</h3>
+                  <p class="text-gray-600 text-sm">Immerse yourself</p>
+                </div>
+              </div>
             </div>
-
-            <div id="Images1" data-aos="flip-u" class="flex hidden lg:block m-auto">
-                <NuxtImg class="ml-10"
-                    src="/Images2.png"
-                    width="440"
-                    height="520"
-                    loading="lazy"
-                    preload
-                />
+          </div>
+          <div class="order-1 lg:order-2">
+            <div
+              class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6"
+            >
+              LIFE IN BARCELONA
             </div>
+            <h2
+              class="text-3xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight"
+            >
+              Barcelona opens its doors to you: Get
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"
+                >ready</span
+              >
+              for student life!
+            </h2>
+            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+              Discover everything you need to make the most of your stay in
+              Barcelona. From finding accommodation and jobs to discovering the
+              city's best restaurants, bars, and attractions.
+            </p>
+            <button
+              @click="$router.push('live-in-barcelona')"
+              class="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 inline-flex items-center"
+            >
+              Explore Living Guide
+              <svg
+                class="w-5 h-5 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
-    <!-- Second Block -->
+      </div>
+    </section>
 
-    <!-- Third Block -->
-        <div id="Third" class="flex flex-col justify-center m-auto items-center lg:w-3/4 mt-20">
-            <div class="flex flex-col w-full lg:flex-row tems-center">
-               <div class="flex flex-col mx-auto lg:mx-0 lg:w-1/2">
-                    <div class="text-blue-600 mx-auto lg:mx-0 font-normal">
-                        EXPLORE BARCELONA
-                    </div>
-                    <div class="lg:text-4xl lg:text-start text-center w-5/6 lg:w-full m-auto lg:m-0 text-2xl font-bold">
-                        Barcelona Must-sees: Your guide to <b class="text-blue-500 font-bold">the best</b> addresses
-                    </div>
-                </div>
+    <!-- Fun Facts Section -->
+    <section class="py-20 bg-white overflow-hidden relative">
+      <!-- Floating Background Elements -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-10 left-10 text-6xl opacity-10 animate-bounce">🍺</div>
+        <div class="absolute top-20 right-20 text-5xl opacity-10 animate-pulse">🥘</div>
+        <div class="absolute bottom-20 left-20 text-4xl opacity-10 animate-spin">⚽</div>
+        <div class="absolute bottom-10 right-10 text-6xl opacity-10 animate-bounce">🏖️</div>
+        <div class="absolute top-1/2 left-20 text-5xl opacity-10 animate-pulse">🎉</div>
+      </div>
 
-                <div class="flex flex-col w-5/6 m-auto lg:m-0 lg:w-1/2 mt-5">
-                    <div class="text-gray-500 lg:text-start text-center lg:text-lg">
-                        Whether you're looking for a wild night out, a cultural gateway or just a coffee to brush up your lessons, you'll find what your looking for in our guide. So don't wait any longer and explore Barcelona.
-                    </div>
-                    <button @click="$router.push('explore-barcelona')" class="h-12 w-32 lg:m-2 m-auto bg-blue-600 hover:bg-blue-700 rounded-full font-normal mt-6 text-white">
-                        See more
-                    </button>
-                </div>
-            </div>
-
-            <div class="flex flex-wrap lg:flex-row justify-between w-full mt-14">
-                <div class="flex flex-col lg:block hidden m-auto items-center">
-                    <NuxtImg src="/Rectangle1.png" width="300" height="420"  loading="lazy" preload/>
-                    <div class="text-sm mt-2 ml-28 underline text-blue-500 ">Casa Bastillo</div>
-                </div>
-                <div class="flex flex-col lg:block hidden m-auto items-center">
-                    <NuxtImg src="/Rectangle2.png" width="300" height="420" loading="lazy" preload/>
-                    <div class="text-sm ml-28 mt-2 underline text-blue-500 ">Arc de Triumf</div>
-                </div>
-                <div class="flex flex-col m-auto lg:block hidden items-center">
-                    <NuxtImg src="/Rectangle3.png" width="300" height="420" loading="lazy" preload/>
-                    <div class="text-sm ml-28 mt-2 underline text-blue-500 ">Parc Guel</div>
-                </div>
-            </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-100 to-orange-100 border border-yellow-200 text-orange-800 rounded-full text-sm font-medium mb-8 shadow-lg">
+            MIND-BLOWING BARCELONA FACTS
+          </div>
+          <h2 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+            <span class="text-gray-900">Did You Know</span>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600"> Barcelona</span>
+            <span class="text-gray-900"> was That</span>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-600"> AMAZING?!</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            Get ready to have your mind blown! These incredible facts will make you pack your bags for Barcelona faster than you can say "¡Hola!"
+          </p>
         </div>
-    <!-- Third Block -->
 
-    <!-- Fourth Block -->
-        <div id="Fourth" class="flex flex-col lg:mt-32 mt-8 justify-around">
-            <div class="text-blue-600 lg:hidden mx-auto lg:mx-0 font-normal">
-                TIPS AND TRICKS
+        <!-- Fun Facts Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <!-- Beer Fact -->
+          <div class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:rotate-1">
+            <div class="text-center">
+              <div class="text-6xl mb-4 group-hover:animate-bounce">🍺</div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Beer Paradise!</h3>
+              <div class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white rounded-2xl p-4 mb-4">
+                <div class="text-3xl font-bold">€2-3</div>
+                <div class="text-sm opacity-90">Average beer price</div>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                A beer in Barcelona costs less than a coffee in Paris! Your student budget will thank you while you enjoy the best cerveza on sunny terraces!
+              </p>
             </div>
-            <div class="flex flex-row lg:w-5/6 mb-10 justify-around mx-auto">
-                <NuxtImg class="lg:block hidden" src="/Group2.png" width="500" height="370" loading="lazy" preload/>
-                <div class="flex flex-col ml-6 lg:w-1/3 lg:mt-12">
-                    <div class="text-2xl lg:w-full w-5/6 lg:mx-0 mx-auto lg:text-start text-center lg:text-4xl font-bold">Want to get by in Spanish ? <b class="text-blue-500 font-bold">This</b> is the place !</div>
-                    <div class="text-gray-500 lg:w-full w-5/6 lg:mx-0 mx-auto lg:text-start text-center mt-4">Discover the language and learn the basics to make yourself understood and live like a true Barcelonian</div>
-                    <button @click="$router.push('/tips-and-tricks')" class="h-12 w-32 bg-blue-600 hover:bg-blue-700 rounded-full font-normal lg:mx-0 mx-auto mt-6 text-white">
-                        See more
-                    </button>
-                </div>                
-            </div>
+          </div>
 
+          <!-- Beach Fact -->
+          <div class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:-rotate-1">
+            <div class="text-center">
+              <div class="text-6xl mb-4 group-hover:animate-pulse">🏖️</div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Beach Study Sessions!</h3>
+              <div class="bg-gradient-to-r from-blue-400 to-cyan-500 text-white rounded-2xl p-4 mb-4">
+                <div class="text-3xl font-bold">4.5km</div>
+                <div class="text-sm opacity-90">Of pristine beaches</div>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Imagine coding with your toes in the sand! Barcelona has more beach than most Caribbean islands... and it's all FREE!
+              </p>
+            </div>
+          </div>
+
+          <!-- Food Fact -->
+          <div class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:rotate-1">
+            <div class="text-center">
+              <div class="text-6xl mb-4 group-hover:animate-spin">🥘</div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Tapas Heaven!</h3>
+              <div class="bg-gradient-to-r from-red-400 to-pink-500 text-white rounded-2xl p-4 mb-4">
+                <div class="text-3xl font-bold">€1-4</div>
+                <div class="text-sm opacity-90">Per tapas dish</div>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Forget expensive student meals! 🍤 In Barcelona, you can feast like a king on authentic tapas for the price of a sandwich elsewhere!
+              </p>
+            </div>
+          </div>
+
+          <!-- Transport Fact -->
+          <div class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:-rotate-1">
+            <div class="text-center">
+              <div class="text-6xl mb-4 group-hover:animate-bounce">🚇</div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Metro Magic!</h3>
+              <div class="bg-gradient-to-r from-purple-400 to-indigo-500 text-white rounded-2xl p-4 mb-4">
+                <div class="text-3xl font-bold">€20</div>
+                <div class="text-sm opacity-90">Monthly student pass</div>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Get anywhere in the city for less than a Netflix subscription! 🚊 The metro runs until 2 AM on weekends, perfect for those late-night coding sessions!
+              </p>
+            </div>
+          </div>
+
+          <!-- Weather Fact -->
+          <div class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:rotate-1">
+            <div class="text-center">
+              <div class="text-6xl mb-4 group-hover:animate-pulse">☀️</div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Sunshine Overload!</h3>
+              <div class="bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-2xl p-4 mb-4">
+                <div class="text-3xl font-bold">300+</div>
+                <div class="text-sm opacity-90">Sunny days per year</div>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Say goodbye to seasonal depression! 😎 Barcelona has more sunny days than California - your Instagram will never look better!
+              </p>
+            </div>
+          </div>
+
+          <!-- Nightlife Fact -->
+          <div class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:-rotate-1">
+            <div class="text-center">
+              <div class="text-6xl mb-4 group-hover:animate-bounce">🎉</div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Party Till Dawn!</h3>
+              <div class="bg-gradient-to-r from-pink-400 to-purple-500 text-white rounded-2xl p-4 mb-4">
+                <div class="text-3xl font-bold">6 AM</div>
+                <div class="text-sm opacity-90">Clubs close time</div>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                The party never stops! 🕺 Barcelona's nightlife is legendary, you'll make friends from around the world while dancing until sunrise!
+              </p>
+            </div>
+          </div>
         </div>
-    <!-- Fourth Block -->
-        <Footer />
-    </div>
+
+        <!-- Mind-Blowing Facts -->
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+          <div class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl p-8 text-white relative overflow-hidden">
+            <div class="absolute top-4 right-4 text-6xl opacity-20">🤯</div>
+            <h4 class="text-2xl font-bold mb-4">Can You Believe This?!</h4>
+            <ul class="space-y-3 text-lg">
+              <li class="flex items-start">
+                <span class="text-yellow-300 mr-3">🍕</span>
+                <span>A full pizza costs less than a movie ticket in most cities!</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-yellow-300 mr-3">🏠</span>
+                <span>You can rent a room in the city center for €400-600/month!</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-yellow-300 mr-3">🎓</span>
+                <span>Student discounts are EVERYWHERE - museums, transport, food!</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-gradient-to-br from-orange-500 to-red-600 rounded-3xl p-8 text-white relative overflow-hidden">
+            <div class="absolute top-4 right-4 text-6xl opacity-20">🚀</div>
+            <h4 class="text-2xl font-bold mb-4">Your Future Awaits!</h4>
+            <ul class="space-y-3 text-lg">
+              <li class="flex items-start">
+                <span class="text-yellow-300 mr-3">💼</span>
+                <span>Barcelona is Europe's startup capital - internships galore!</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-yellow-300 mr-3">🌐</span>
+                <span>Everyone speaks English + Spanish + Catalan = trilingual you!</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-yellow-300 mr-3">✈️</span>
+                <span>Flights to anywhere in Europe from €20 with Ryanair!</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Barcelona Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <div
+            class="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium mb-6"
+          >
+            EXPLORE BARCELONA
+          </div>
+          <h2
+            class="text-3xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight"
+          >
+            Barcelona Must-sees: Your guide to
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600"
+              >the best</span
+            >
+            addresses
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Whether you're looking for a wild night out, a cultural gateway, or
+            just a coffee to brush up on your lessons, you'll find what you're
+            looking for in our guide.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <div
+            class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+          >
+            <img
+              src="/casa-batllo.png"
+              alt="Casa Batlló"
+              class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+            ></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <h3 class="text-white font-bold text-xl mb-2">Casa Batlló</h3>
+              <p class="text-white/80 text-sm">
+                Gaudí's architectural masterpiece
+              </p>
+              <div class="flex items-center mt-3 text-blue-300">
+                <svg
+                  class="w-4 h-4 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span class="text-sm">Eixample District</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+          >
+            <img
+              src="/arc-de-triomphe.png"
+              alt="Arc de Triomf"
+              class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+            ></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <h3 class="text-white font-bold text-xl mb-2">Arc de Triomf</h3>
+              <p class="text-white/80 text-sm">Historic triumphal arch</p>
+              <div class="flex items-center mt-3 text-blue-300">
+                <svg
+                  class="w-4 h-4 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span class="text-sm">Ciutat Vella</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+          >
+            <img
+              src="/parc-guell.jpg"
+              alt="Park Güell"
+              class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"
+            ></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <h3 class="text-white font-bold text-xl mb-2">Park Güell</h3>
+              <p class="text-white/80 text-sm">Colorful mosaic wonderland</p>
+              <div class="flex items-center mt-3 text-blue-300">
+                <svg
+                  class="w-4 h-4 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span class="text-sm">Gràcia District</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button
+            @click="$router.push('/explore-barcelona')"
+            class="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:underlinehover:-translate-y-1 transition-all duration-300 inline-flex items-center"
+          >
+            Discover All Locations
+            <svg
+              class="w-5 h-5 ml-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips and Tricks Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="relative">
+            <div
+              class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-3xl p-8 shadow-lg"
+            >
+              <div class="grid grid-cols-2 gap-6">
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                  <div
+                    class="w-12 h-12 bg-gradient-to-r from-red-500 to-yellow-500 rounded-xl flex items-center justify-center mb-4"
+                  >
+                    <span class="text-white font-bold text-lg">¡</span>
+                  </div>
+                  <h4 class="font-bold text-gray-900 mb-2">Basic Phrases</h4>
+                  <p class="text-gray-600 text-sm">Essential Spanish words</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                  <div
+                    class="w-12 h-12 bg-gradient-to-r from-blue-500 to-green-500 rounded-xl flex items-center justify-center mb-4"
+                  >
+                    <svg
+                      class="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h4 class="font-bold text-gray-900 mb-2">Conversations</h4>
+                  <p class="text-gray-600 text-sm">Practice dialogues</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                  <div
+                    class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-4"
+                  >
+                    <svg
+                      class="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h4 class="font-bold text-gray-900 mb-2">Culture Tips</h4>
+                  <p class="text-gray-600 text-sm">Local customs</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                  <div
+                    class="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-500 rounded-xl flex items-center justify-center mb-4"
+                  >
+                    <svg
+                      class="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h4 class="font-bold text-gray-900 mb-2">Quick Tips</h4>
+                  <p class="text-gray-600 text-sm">Survival guide</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium mb-6"
+            >
+              TIPS AND TRICKS
+            </div>
+            <h2
+              class="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight"
+            >
+              Want to get by in Spanish?
+            </h2>
+            <h2
+              class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight"
+            >
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600"
+                >This</span
+              >
+              is the place!
+            </h2>
+            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+              Discover the language and learn the basics to make yourself
+              understood and live like a true Barcelonian. From essential
+              phrases to cultural insights.
+            </p>
+            <div class="space-y-4 mb-8">
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700"
+                  >Essential Spanish phrases for daily life</span
+                >
+              </div>
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700"
+                  >Cultural etiquette and local customs</span
+                >
+              </div>
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700">Practical communication tips</span>
+              </div>
+            </div>
+            <button
+              @click="$router.push('/tips-and-tricks')"
+              class="px-8 py-4 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 inline-flex items-center"
+            >
+              Learn Spanish Basics
+              <svg
+                class="w-5 h-5 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+  </div>
 </template>
 
-<style setup>
-</style>
+<script setup></script>

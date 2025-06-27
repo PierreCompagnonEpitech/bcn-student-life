@@ -1,163 +1,377 @@
 <template>
+  <div class="min-h-screen bg-white">
     <Header />
-
-    <div class="flex flex-col w-5/6 m-auto mt-16">
-        <div class="text-blue-600 font-semibold">LIVE IN BARCELONA</div>
-
-        <div class="text-4xl mt-4 font-bold">Transport</div>
-
-        <div class="text-gray-500 text-lg mt-8 ">
-            Barcelona has excellent public transport links. Metro, bus, streetcar,  bike... you'll have plenty of choice 
-            when it comes to getting around the city and discovering its different districts.
-            The network of metro, bus, tram, and trains in Barcelona is very well-developed. 
-            You can reach almost anywhere with the metro and tram. There are more than 230 bus 
-            lines and an additional 30 night bus lines available, complemented by funiculars and cable cars.
+    
+    <!-- Hero Section -->
+    <section class="py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12">
+          <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2v0a2 2 0 01-2-2v-2a2 2 0 00-2-2H8z"></path>
+            </svg>
+            LIVE IN BARCELONA
+          </div>
+          <h1 class="text-3xl lg:text-5xl font-bold text-gray-900 mb-8">
+            Getting Around <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Barcelona</span>
+          </h1>
+          <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8">
+            <p class="text-lg text-gray-700 leading-relaxed">
+              Barcelona has excellent public transport links. Metro, bus, streetcar, bike... you'll have plenty of choice 
+              when it comes to getting around the city and discovering its different districts. The network is very well-developed 
+              with more than 230 bus lines and an additional 30 night bus lines, complemented by funiculars and cable cars.
+            </p>
+          </div>
         </div>
 
-        <div class="text-xl mt-10 ml-20 font-semibold">
-            1. Metro🚋
+        <!-- Transport Options Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div class="bg-white rounded-3xl shadow-lg p-8 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <span class="text-white text-2xl">🚋</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Metro</h3>
+            <p class="text-gray-600">11 lines covering the entire city</p>
+          </div>
+          <div class="bg-white rounded-3xl shadow-lg p-8 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <span class="text-white text-2xl">🚊</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Tram</h3>
+            <p class="text-gray-600">6 routes connecting suburbs</p>
+          </div>
+          <div class="bg-white rounded-3xl shadow-lg p-8 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <span class="text-white text-2xl">🚌</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Bus</h3>
+            <p class="text-gray-600">230+ lines plus night services</p>
+          </div>
+          <div class="bg-white rounded-3xl shadow-lg p-8 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <span class="text-white text-2xl">🚴</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Bike</h3>
+            <p class="text-gray-600">Eco-friendly city exploration</p>
+          </div>
         </div>
 
-        <li class="text-blue-600 text-lg mt-6 ml-2">
-            Discovering Barcelona's Metro:
-        </li>
-        <div class="mt-4">
-            Barcelona's metro system, operated by two entities (TMB and FGC), comprises 11 lines with distinctive 
-            colors and numbers. TMB runs 8 lines (L1, L2, L3, L4, L5, L9, L10, L11), while FGC operates 4 lines 
-            (L6, L7, L8). This extensive network provides easy access to various parts of the city, making it a 
-            popular choice for both locals and tourists. The metro is praised for its safety, efficiency, and reliability,
-            with frequent trains during peak hours. Additionally, the system is accessible for individuals with 
-            disabilities, with stations equipped with lifts and other accessibility features. <br/><br/>
-            Operating hours typically range from 05:00 to midnight, with extended services on weekends and during major 
-            events. <br/><br/>
-            You can conveniently purchase tickets from ticket machines located at station entrances, with
-            options for cash or card payments. Various passes are available, offering flexibility. The most recommended is the
-            T-usual, which offers unlimited travel for 30 successive days
+        <!-- Detailed Sections -->
+        <div class="space-y-16">
+          <!-- Metro Section -->
+          <div class="bg-white rounded-3xl shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-red-500 to-pink-500 p-8 text-white">
+              <div class="flex items-center mb-4">
+                <span class="text-4xl mr-4">🚋</span>
+                <h2 class="text-3xl font-bold">Metro System</h2>
+              </div>
+              <p class="text-red-100 text-lg">Barcelona's efficient underground network</p>
+            </div>
+            <div class="p-8">
+              <div class="grid lg:grid-cols-2 gap-8">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <svg class="w-6 h-6 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    Discovering Barcelona's Metro
+                  </h3>
+                  <p class="text-gray-600 leading-relaxed mb-6">
+                    Barcelona's metro system comprises 11 lines with distinctive colors and numbers, operated by TMB (8 lines) 
+                    and FGC (4 lines). This extensive network provides easy access to various parts of the city, praised for 
+                    its safety, efficiency, and reliability.
+                  </p>
+                  <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                      <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                      </div>
+                      <span class="text-gray-700">Operating hours: 05:00 to midnight</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                      </div>
+                      <span class="text-gray-700">Extended weekend services</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                      </div>
+                      <span class="text-gray-700">Accessibility features available</span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <svg class="w-6 h-6 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-1.447-.894L15 4m0 13V4m0 0L9 7"></path>
+                    </svg>
+                    Zone System
+                  </h3>
+                  <p class="text-gray-600 leading-relaxed mb-4">
+                    The city is divided into six zones, with Zone 1 being the most central and containing major attractions 
+                    like Gothic Quarter, Sagrada Familia, and FC Barcelona. Most tourist destinations are in Zone 1.
+                  </p>
+                  <div class="bg-blue-50 rounded-xl p-4">
+                    <p class="text-blue-800 font-medium">💡 Recommended: T-usual pass</p>
+                    <p class="text-blue-700 text-sm mt-1">Unlimited travel for 30 consecutive days</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <img src="/metro-barcelona.png" alt="Barcelona Metro Map" class="w-full rounded-2xl shadow-lg">
+              </div>
+            </div>
+          </div>
+
+          <!-- Tram Section -->
+          <div class="bg-white rounded-3xl shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-blue-500 to-cyan-500 p-8 text-white">
+              <div class="flex items-center mb-4">
+                <span class="text-4xl mr-4">🚊</span>
+                <h2 class="text-3xl font-bold">Tram Network</h2>
+              </div>
+              <p class="text-blue-100 text-lg">Modern tram system connecting Barcelona's suburbs</p>
+            </div>
+            <div class="p-8">
+              <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-900 mb-4">Tram Routes</h3>
+                  <p class="text-gray-600 leading-relaxed mb-6">
+                    The trams operate on six routes: Trambaix (T1, T2, T3) and Trambesos (T4, T5, T6). 
+                    The network spans 15.1 km with 29 stops, averaging two minutes between stops.
+                  </p>
+                  <div class="bg-cyan-50 rounded-xl p-4">
+                    <h4 class="font-bold text-cyan-800 mb-2">Operating Hours:</h4>
+                    <ul class="text-cyan-700 text-sm space-y-1">
+                      <li>• Monday-Thursday: 5am - midnight</li>
+                      <li>• Friday-Saturday: 5am - 2am</li>
+                      <li>• Sunday: 5am - midnight</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-gray-900 mb-4">Ticketing</h3>
+                  <p class="text-gray-600 leading-relaxed mb-4">
+                    Integration tickets work across metro, bus, and tram. The T-usual pass offers the best value 
+                    for regular travelers with unlimited 30-day access.
+                  </p>
+                  <div class="space-y-3">
+                    <div class="flex items-center space-x-3">
+                      <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                      </div>
+                      <span class="text-gray-700">Available at self-service machines</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                      </div>
+                      <span class="text-gray-700">Cash or card payments accepted</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 gap-6">
+                <img src="/trambesos-map.png" alt="Trambesos Map" class="w-full rounded-2xl shadow-lg">
+                <img src="/trambaix-map.png" alt="Trambaix Map" class="w-full rounded-2xl shadow-lg">
+              </div>
+            </div>
+          </div>
+
+          <!-- Bus Section -->
+          <div class="bg-white rounded-3xl shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-green-500 to-emerald-500 p-8 text-white">
+              <div class="flex items-center mb-4">
+                <span class="text-4xl mr-4">🚌</span>
+                <h2 class="text-3xl font-bold">Bus Network</h2>
+              </div>
+              <p class="text-green-100 text-lg">Comprehensive bus system covering all Barcelona districts</p>
+            </div>
+            <div class="p-8">
+              <div class="grid lg:grid-cols-2 gap-8">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-900 mb-4">Bus System Overview</h3>
+                  <p class="text-gray-600 leading-relaxed mb-6">
+                    Barcelona operates a fleet of 1,000 buses covering more than 100 routes. The buses are single-decker, 
+                    suitable for people with reduced mobility, and include high-speed lines, conventional district connections, 
+                    neighborhood buses, and night-time services.
+                  </p>
+                  <div class="bg-green-50 rounded-xl p-4">
+                    <h4 class="font-bold text-green-800 mb-2">Service Types:</h4>
+                    <ul class="text-green-700 text-sm space-y-1">
+                      <li>• High-speed cross-city lines</li>
+                      <li>• District connecting routes</li>
+                      <li>• Neighborhood short routes</li>
+                      <li>• Night bus services</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-gray-900 mb-4">Tickets & Schedule</h3>
+                  <p class="text-gray-600 leading-relaxed mb-4">
+                    Single tickets cost €2.40, or use multi-day passes like the T-usual. Most buses operate 
+                    between 5-8 AM to 10-11 PM, with schedules varying by route.
+                  </p>
+                  <div class="space-y-3">
+                    <div class="flex items-center space-x-3">
+                      <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                      </div>
+                      <span class="text-gray-700">Check schedules at bus stops</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                      </div>
+                      <span class="text-gray-700">Same tickets as metro and tram</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bike Section -->
+          <div class="bg-white rounded-3xl shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-yellow-500 to-orange-500 p-8 text-white">
+              <div class="flex items-center mb-4">
+                <span class="text-4xl mr-4">🚴</span>
+                <h2 class="text-3xl font-bold">Cycling in Barcelona</h2>
+              </div>
+              <p class="text-yellow-100 text-lg">Eco-friendly and affordable way to explore the city</p>
+            </div>
+            <div class="p-8">
+              <div class="grid lg:grid-cols-2 gap-8">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-900 mb-4">Why Choose Cycling?</h3>
+                  <p class="text-gray-600 leading-relaxed mb-6">
+                    Cycling is an affordable way to navigate Barcelona, especially as you don't have to worry about 
+                    parking fees. Many bike hire companies offer affordable rates and discounts for longer rentals. 
+                    Trams and metros have designated areas for bikes.
+                  </p>
+                  <div class="space-y-3">
+                    <div class="flex items-center space-x-3">
+                      <div class="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                      </div>
+                      <span class="text-gray-700">No parking fees</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <div class="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                      </div>
+                      <span class="text-gray-700">Affordable rental rates</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                      <div class="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                      </div>
+                      <span class="text-gray-700">Bike areas in public transport</span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-gray-900 mb-4">Bicing System</h3>
+                  <p class="text-gray-600 leading-relaxed mb-4">
+                    Barcelona's bike-sharing system allows subscribers to borrow bikes from strategically located stations 
+                    throughout the city. Pick up at one station and drop off at another near your destination.
+                  </p>
+                  <div class="bg-orange-50 rounded-xl p-4">
+                    <h4 class="font-bold text-orange-800 mb-2">🚴 Bicing Benefits:</h4>
+                    <ul class="text-orange-700 text-sm space-y-1">
+                      <li>• Convenient city-wide stations</li>
+                      <li>• Flexible pick-up and drop-off</li>
+                      <li>• Perfect for short trips</li>
+                      <li>• Environmentally friendly</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <li class="text-blue-600 text-lg mt-6 ml-2">
-            Metro zone system:
-        </li>
-
-        <div class="mt-4">
-            The transport zone system in Barcelona is a way of setting prices for transport tickets depending on the 
-            distance of the destination from the centre of Barcelona. The further the distance to the destination the 
-            higher the zone number and the higher the cost of the transport ticket. The transport system includes buses,
-            trams, and the metro system. The city is divided into six zones, with Zone 1 being the most central zone and
-            Zone 6 the outer most zone. Zone 1 area is often the most interesting as it contains Gothic Quarter, Sagrada Familia,
-            Casa Mila, Casa Battlo and FC Barcelona etc. Barcelona International Airport is included in Zone 1 however
-            a special metro ticket is needed to travel to BCN airport from the city centre.
+        <!-- Resources Section -->
+        <div class="mt-16">
+          <div class="bg-gray-50 rounded-3xl p-8 lg:p-12">
+            <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-8 flex items-center">
+              <svg class="w-8 h-8 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+              </svg>
+              Useful Transport Resources
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6">
+              <a href="https://www.barcelona-tourist-guide.com/en/transport/00-transport.html" target="_blank" class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 group">
+                <div class="flex items-start space-x-4">
+                  <div class="w-12 h-12 bg-gradient-to-r from-blue-100 to-purple-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-blue-600 hover:text-blue-800 transition-colors">Barcelona Tourist Guide</h3>
+                    <p class="text-gray-600 text-sm mt-1">Comprehensive transport information</p>
+                  </div>
+                </div>
+              </a>
+              <a href="https://www.barcelonaturisme.com/wv3/en/page/59/bus.html" target="_blank" class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 group">
+                <div class="flex items-start space-x-4">
+                  <div class="w-12 h-12 bg-gradient-to-r from-green-100 to-emerald-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-blue-600 hover:text-blue-800 transition-colors">Barcelona Tourism</h3>
+                    <p class="text-gray-600 text-sm mt-1">Official bus information</p>
+                  </div>
+                </div>
+              </a>
+              <a href="https://www.barcelona.cat/internationalwelcome/en/bicing-barcelona-public-bicycle-service" target="_blank" class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 group">
+                <div class="flex items-start space-x-4">
+                  <div class="w-12 h-12 bg-gradient-to-r from-yellow-100 to-orange-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-blue-600 hover:text-blue-800 transition-colors">Bicing Barcelona</h3>
+                    <p class="text-gray-600 text-sm mt-1">Public bicycle service info</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-        <NuxtImg 
-            src="/metromap.png"
-            height=""
-            width=""
-         />
-        <div class="text-xl mt-20 ml-20 font-semibold">
-            2. Tram🚊
-        </div>
-
-        <li class="text-blue-600 text-lg mt-6 ml-2">
-            Tram functionnement:
-        </li>
-
-        <div class="mt-4">
-            The trams are available on a total of six routes. There are three routes called 'Trambaix': T1, T2 and T3. 
-            The other three routes are 'Trambesos': T4, T5 and T6. The lines T1, T2 and T3 has a shared section of 6 km 
-            and runs through the municipalities of Barcelona, l'Hospitalet de Llobregat, Esplugues de Llobregat, Cornellà
-            de Llobregat, Sant Joan Despí, Sant Just Desvern and Sant Feliu de Llobregat. The network is 15.1 km long 
-            with 29 stops. The time between stops varies. However, in general, there is an average of two minutes between
-            each stop. So, for example, if you make a journey that passes through five stops, your journey should take
-            around ten minutes. <br/> <br/>
-            Tram is available Monday to Thursday from 5 am to midnight;
-            Friday, Saturday and the evenings before public holidays from 5 am to 2 am; and 
-            Sundays from 5 am to midnight.
-        </div>
-        <NuxtImg 
-            src="/trambesos.png" />
-        <NuxtImg 
-            src="/trambaix.png" />
-        <li class="text-blue-600 text-lg mt-6 ml-2">
-            How to get ticket:
-        </li>
-
-        <div class="mt-4">
-            You can buy a single ticket for the tramway. You can also buy "integration" tickets. These tickets can be 
-            used on the Barcelona metro, bus and tram. The most likely ticket you'll want to buy during your stay is the 
-            T-usual. This ticket is valid for 30 consecutive days with unlimited travel during that period. The T-usual 
-            can be purchased for different zones, but if you're planning to spend your time in the city of Barcelona, 
-            you'll only need to buy a ticket covering zone 1, where the main tourist attractions are located. <br/><br />
-            Cards can be acquired at the TRAM self-service machines, Metro, Ferrocarrils de la Generalitat de Catalunya 
-            and Rodalies de Catalunya stations, interurban bus stations, the customer service offices of the integrated
-            transport companies, ServiCaixa cashpoints, tobacconists, betting pool and lottery sellers, newsagents and 
-            other participating establishments.
-        </div>
-
-
-        <div class="text-xl mt-20 ml-20 font-semibold">
-            3. Bus🚌
-        </div>
-
-        <li class="text-blue-600 text-lg mt-6 ml-2">
-           Bus at Barcelona:
-        </li>
-
-        <div class="mt-4">
-            Barcelona has a transport system with a fleet of 1,000 buses covering more than 100 routes serving all the 
-            districts of Barcelona. The buses are single-decker and suitable for people with reduced mobility. The bus 
-            network is extensive and comprises high-speed lines that cross the city horizontally and vertically;
-            conventional lines linking districts; neighbourhood buses covering short routes in each district; and
-            night-time lines.
-        </div>
-
-        <li class="text-blue-600 text-lg mt-6 ml-2">
-            Tickets et Timetable
-        </li>
-
-        <div class="mt-4">
-            As with the metro and tram, you can pay for single tickets (£2.40) or multi-day passes such as the T-usual,
-            valid for 30 successive days. Bus tickets can be paid for at the metro or tram terminals. <br/><br/>
-            The timetable varies depending on the bus route. Most buses start running between 5 and 8 a.m. and stop 
-            between 10 and 11 p.m. The timetable for each line and the frequency of service can be consulted at bus 
-            stops or on the website.
-        </div>
-
-        <div class="text-xl mt-20 ml-20 font-semibold">
-            4. Bike🚴🏽‍♂️
-        </div>
-
-        <li class="text-blue-600 text-lg mt-6 ml-2">
-            Biking in Barcelona:
-        </li>
-
-        <div class="mt-4">
-            Cycling is an affordable way to navigate in Barcelona, especially as you don't have to worry about parking 
-            fees. What's more, many bike hire companies offer affordable rates and discounts for longer rentals, making 
-            it an economical choice for exploring the city. Also, Trams and Metros have designated areas for bikes
-        </div>
-
-        <li class="text-blue-600 text-lg mt-6 ml-2">
-            Bicing
-        </li>
-
-        <div class="mt-4">
-            Barcelona's bike-sharing system, called Bicing, allows subscribers to borrow bikes throughout the city from
-            strategically located stations. Users can pick up a bike at one station and drop it off at another close to
-            their destination, making it a convenient option for urban travel.
-        </div>
-
-        <div class="mt-20  text-xl font-semibold">For more information:</div>
-
-        <li class="mt-5 ml-4">
-            <a class="text-blue-500" href="https://www.barcelona-tourist-guide.com/en/transport/00-transport.html">barcelona-tourist-guide.com</a>
-        </li>
-        <li class="ml-4">
-            <a class="text-blue-500" href="https://www.barcelonaturisme.com/wv3/en/page/59/bus.html">barcelonaturisme.com</a>
-        </li>
-        <li class="ml-4">
-            <a class="text-blue-500" href="https://www.barcelona.cat/internationalwelcome/en/bicing-barcelona-public-bicycle-service">Bicing Barcelona</a>
-        </li>
-    </div>
+      </div>
+    </section>
 
     <Footer />
+  </div>
 </template>
+
+<script setup>
+// Component logic can be added here if needed
+</script>
