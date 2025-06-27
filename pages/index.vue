@@ -46,15 +46,13 @@
               <button
                 class="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
               >
-                Start Your Journey
-              </button>
-              <button
-                class="px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
-              >
-              <a href="https://www.youtube.com/watch?v=k8wFUbpFp1Y&pp=ygURZXBpdGVjaCBiYXJjZWxvbmHSBwkJwwkBhyohjO8%3D" 
-                 target="_blank" rel="noopener noreferrer">
-                Watch Video
-              </a>
+                <a
+                  href="https://www.youtube.com/watch?v=k8wFUbpFp1Y&pp=ygURZXBpdGVjaCBiYXJjZWxvbmHSBwkJwwkBhyohjO8%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Watch Video
+                </a>
               </button>
             </div>
           </div>
@@ -62,11 +60,11 @@
             <div
               class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-3xl transform rotate-6 opacity-20"
             ></div>
-            <div class="relative bg-white rounded-3xl shadow-2xl p-8">
+            <div class="relative bg-white rounded-3xl shadow-2xl p-4">
               <img
-                src="/Campus-EPITECH-Bcn.png"
+                src="/barcelona-hero.png"
                 alt="Barcelona Student Life"
-                class="w-full h-96 object-cover rounded-2xl"
+                class="w-full h-full object-cover rounded-2xl"
               />
             </div>
           </div>
@@ -233,117 +231,187 @@
     <section class="py-20 bg-white overflow-hidden relative">
       <!-- Floating Background Elements -->
       <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="absolute top-10 left-10 text-6xl opacity-10 animate-bounce">🍺</div>
-        <div class="absolute top-20 right-20 text-5xl opacity-10 animate-pulse">🥘</div>
-        <div class="absolute bottom-20 left-20 text-4xl opacity-10 animate-spin">⚽</div>
-        <div class="absolute bottom-10 right-10 text-6xl opacity-10 animate-bounce">🏖️</div>
-        <div class="absolute top-1/2 left-20 text-5xl opacity-10 animate-pulse">🎉</div>
+        <div class="absolute top-10 left-10 text-6xl opacity-10 animate-bounce">
+          🍺
+        </div>
+        <div class="absolute top-20 right-20 text-5xl opacity-10 animate-pulse">
+          🥘
+        </div>
+        <div
+          class="absolute bottom-20 left-20 text-4xl opacity-10 animate-spin"
+        >
+          ⚽
+        </div>
+        <div
+          class="absolute bottom-10 right-10 text-6xl opacity-10 animate-bounce"
+        >
+          🏖️
+        </div>
+        <div class="absolute top-1/2 left-20 text-5xl opacity-10 animate-pulse">
+          🎉
+        </div>
       </div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-100 to-orange-100 border border-yellow-200 text-orange-800 rounded-full text-sm font-medium mb-8 shadow-lg">
+          <div
+            class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-100 to-orange-100 border border-yellow-200 text-orange-800 rounded-full text-sm font-medium mb-8 shadow-lg"
+          >
             MIND-BLOWING BARCELONA FACTS
           </div>
           <h2 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
             <span class="text-gray-900">Did You Know</span>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600"> Barcelona</span>
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600"
+            >
+              Barcelona</span
+            >
             <span class="text-gray-900"> was That</span>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-600"> AMAZING?!</span>
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-600"
+            >
+              AMAZING?!</span
+            >
           </h2>
           <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Get ready to have your mind blown! These incredible facts will make you pack your bags for Barcelona faster than you can say "¡Hola!"
+            Get ready to have your mind blown! These incredible facts will make
+            you pack your bags for Barcelona faster than you can say "¡Hola!"
           </p>
         </div>
 
         <!-- Fun Facts Grid -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           <!-- Beer Fact -->
-          <div class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:rotate-1">
+          <div
+            class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:rotate-1"
+          >
             <div class="text-center">
               <div class="text-6xl mb-4 group-hover:animate-bounce">🍺</div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-4">Beer Paradise!</h3>
-              <div class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white rounded-2xl p-4 mb-4">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                Beer Paradise!
+              </h3>
+              <div
+                class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white rounded-2xl p-4 mb-4"
+              >
                 <div class="text-3xl font-bold">€2-3</div>
                 <div class="text-sm opacity-90">Average beer price</div>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                A beer in Barcelona costs less than a coffee in Paris! Your student budget will thank you while you enjoy the best cerveza on sunny terraces!
+                A beer in Barcelona costs less than a coffee in Paris! Your
+                student budget will thank you while you enjoy the best cerveza
+                on sunny terraces!
               </p>
             </div>
           </div>
 
           <!-- Beach Fact -->
-          <div class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:-rotate-1">
+          <div
+            class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:-rotate-1"
+          >
             <div class="text-center">
               <div class="text-6xl mb-4 group-hover:animate-pulse">🏖️</div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-4">Beach Study Sessions!</h3>
-              <div class="bg-gradient-to-r from-blue-400 to-cyan-500 text-white rounded-2xl p-4 mb-4">
-                <div class="text-3xl font-bold">4.5km</div>
-                <div class="text-sm opacity-90">Of pristine beaches</div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                Beach Study Sessions!
+              </h3>
+              <div
+                class="bg-gradient-to-r from-blue-400 to-cyan-500 text-white rounded-2xl p-4 mb-4"
+              >
+                <div class="text-3xl font-bold">10min away</div>
+                <div class="text-sm opacity-90">From the beach</div>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                Imagine coding with your toes in the sand! Barcelona has more beach than most Caribbean islands... and it's all FREE!
+                Imagine coding with your toes in the sand! Barcelona has more
+                beach than most Caribbean islands... and it's all FREE!
               </p>
             </div>
           </div>
 
           <!-- Food Fact -->
-          <div class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:rotate-1">
+          <div
+            class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:rotate-1"
+          >
             <div class="text-center">
               <div class="text-6xl mb-4 group-hover:animate-spin">🥘</div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-4">Tapas Heaven!</h3>
-              <div class="bg-gradient-to-r from-red-400 to-pink-500 text-white rounded-2xl p-4 mb-4">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                Tapas Heaven!
+              </h3>
+              <div
+                class="bg-gradient-to-r from-red-400 to-pink-500 text-white rounded-2xl p-4 mb-4"
+              >
                 <div class="text-3xl font-bold">€1-4</div>
                 <div class="text-sm opacity-90">Per tapas dish</div>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                Forget expensive student meals! 🍤 In Barcelona, you can feast like a king on authentic tapas for the price of a sandwich elsewhere!
+                Forget expensive student meals! In Barcelona, you can feast like
+                a king on authentic tapas for the price of a sandwich elsewhere!
               </p>
             </div>
           </div>
 
           <!-- Transport Fact -->
-          <div class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:-rotate-1">
+          <div
+            class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:-rotate-1"
+          >
             <div class="text-center">
               <div class="text-6xl mb-4 group-hover:animate-bounce">🚇</div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-4">Metro Magic!</h3>
-              <div class="bg-gradient-to-r from-purple-400 to-indigo-500 text-white rounded-2xl p-4 mb-4">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                Metro Magic!
+              </h3>
+              <div
+                class="bg-gradient-to-r from-purple-400 to-indigo-500 text-white rounded-2xl p-4 mb-4"
+              >
                 <div class="text-3xl font-bold">€20</div>
                 <div class="text-sm opacity-90">Monthly student pass</div>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                Get anywhere in the city for less than a Netflix subscription! 🚊 The metro runs until 2 AM on weekends, perfect for those late-night coding sessions!
+                Get anywhere in the city for less than a Netflix subscription!
+                The metro runs until 2 AM on weekends, perfect for those
+                late-night coding sessions!
               </p>
             </div>
           </div>
 
           <!-- Weather Fact -->
-          <div class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:rotate-1">
+          <div
+            class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:rotate-1"
+          >
             <div class="text-center">
               <div class="text-6xl mb-4 group-hover:animate-pulse">☀️</div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-4">Sunshine Overload!</h3>
-              <div class="bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-2xl p-4 mb-4">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                Sunshine Overload!
+              </h3>
+              <div
+                class="bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-2xl p-4 mb-4"
+              >
                 <div class="text-3xl font-bold">300+</div>
                 <div class="text-sm opacity-90">Sunny days per year</div>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                Say goodbye to seasonal depression! 😎 Barcelona has more sunny days than California - your Instagram will never look better!
+                Say goodbye to seasonal depression! Barcelona has more sunny
+                days than California - your Instagram will never look better!
               </p>
             </div>
           </div>
 
           <!-- Nightlife Fact -->
-          <div class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:-rotate-1">
+          <div
+            class="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:-rotate-1"
+          >
             <div class="text-center">
               <div class="text-6xl mb-4 group-hover:animate-bounce">🎉</div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-4">Party Till Dawn!</h3>
-              <div class="bg-gradient-to-r from-pink-400 to-purple-500 text-white rounded-2xl p-4 mb-4">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                Party Till Dawn!
+              </h3>
+              <div
+                class="bg-gradient-to-r from-pink-400 to-purple-500 text-white rounded-2xl p-4 mb-4"
+              >
                 <div class="text-3xl font-bold">6 AM</div>
                 <div class="text-sm opacity-90">Clubs close time</div>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                The party never stops! 🕺 Barcelona's nightlife is legendary, you'll make friends from around the world while dancing until sunrise!
+                The party never stops! Barcelona's nightlife is legendary,
+                you'll make friends from around the world while dancing until
+                sunrise!
               </p>
             </div>
           </div>
@@ -351,40 +419,61 @@
 
         <!-- Mind-Blowing Facts -->
         <div class="grid md:grid-cols-2 gap-8 mb-16">
-          <div class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl p-8 text-white relative overflow-hidden">
+          <div
+            class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl p-8 text-white relative overflow-hidden"
+          >
             <div class="absolute top-4 right-4 text-6xl opacity-20">🤯</div>
             <h4 class="text-2xl font-bold mb-4">Can You Believe This?!</h4>
             <ul class="space-y-3 text-lg">
               <li class="flex items-start">
                 <span class="text-yellow-300 mr-3">🍕</span>
-                <span>A full pizza costs less than a movie ticket in most cities!</span>
+                <span
+                  >A full pizza costs less than a movie ticket in most
+                  cities!</span
+                >
               </li>
               <li class="flex items-start">
                 <span class="text-yellow-300 mr-3">🏠</span>
-                <span>You can rent a room in the city center for €400-600/month!</span>
+                <span
+                  >You can rent a room in the city center for
+                  €400-600/month!</span
+                >
               </li>
               <li class="flex items-start">
                 <span class="text-yellow-300 mr-3">🎓</span>
-                <span>Student discounts are EVERYWHERE - museums, transport, food!</span>
+                <span
+                  >Student discounts are EVERYWHERE - museums, transport,
+                  food!</span
+                >
               </li>
             </ul>
           </div>
 
-          <div class="bg-gradient-to-br from-orange-500 to-red-600 rounded-3xl p-8 text-white relative overflow-hidden">
+          <div
+            class="bg-gradient-to-br from-orange-500 to-red-600 rounded-3xl p-8 text-white relative overflow-hidden"
+          >
             <div class="absolute top-4 right-4 text-6xl opacity-20">🚀</div>
             <h4 class="text-2xl font-bold mb-4">Your Future Awaits!</h4>
             <ul class="space-y-3 text-lg">
               <li class="flex items-start">
                 <span class="text-yellow-300 mr-3">💼</span>
-                <span>Barcelona is Europe's startup capital - internships galore!</span>
+                <span
+                  >Barcelona is Europe's startup capital - internships
+                  galore!</span
+                >
               </li>
               <li class="flex items-start">
                 <span class="text-yellow-300 mr-3">🌐</span>
-                <span>Everyone speaks English + Spanish + Catalan = trilingual you!</span>
+                <span
+                  >Everyone speaks English + Spanish + Catalan = trilingual
+                  you!</span
+                >
               </li>
               <li class="flex items-start">
                 <span class="text-yellow-300 mr-3">✈️</span>
-                <span>Flights to anywhere in Europe from €20 with Ryanair!</span>
+                <span
+                  >Flights to anywhere in Europe from €20 with Ryanair!</span
+                >
               </li>
             </ul>
           </div>

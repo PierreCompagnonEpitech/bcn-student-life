@@ -1,833 +1,494 @@
 <template>
-    <Header />
-    <div class="min-h-screen bg-gradient-to-br from-orange-50 via-red-50 to-yellow-50">
+  <Header />
+  <div class="min-h-screen bg-white">
+    <!-- Hero Section -->
+    <div
+      class="relative bg-gradient-to-br from-blue-50 via-white to-purple-50 py-20"
+    >
+      <div class="absolute inset-0 opacity-40"></div>
 
-    <!-- Animated Hero Section -->
-    <section class="relative py-20 overflow-hidden">
-      <!-- Floating Spanish Elements Background -->
-      <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div v-for="(item, index) in floatingElements" :key="index" 
-             class="absolute text-6xl opacity-10 animate-float"
-             :style="{ 
-               left: item.x + '%', 
-               top: item.y + '%', 
-               animationDelay: item.delay + 's',
-               animationDuration: item.duration + 's'
-             }">
-          {{ item.emoji }}
-        </div>
-      </div>
-
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <!-- Progress Ring -->
-        <div class="mb-8 flex justify-center">
-          <div class="relative w-32 h-32">
-            <svg class="w-32 h-32 transform -rotate-90" viewBox="0 0 120 120">
-              <circle cx="60" cy="60" r="50" stroke="#f3f4f6" stroke-width="8" fill="none"/>
-              <circle cx="60" cy="60" r="50" stroke="url(#gradient)" stroke-width="8" 
-                      fill="none" stroke-linecap="round"
-                      :stroke-dasharray="314" 
-                      :stroke-dashoffset="314 - (learningProgress / 100) * 314"
-                      class="transition-all duration-1000 ease-out"/>
-              <defs>
-                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:#f59e0b"/>
-                  <stop offset="100%" style="stop-color:#ef4444"/>
-                </linearGradient>
-              </defs>
-            </svg>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="text-center">
-                <div class="text-2xl font-bold text-orange-600">{{ learningProgress }}%</div>
-                <div class="text-xs text-gray-500">Mastered</div>
-              </div>
-            </div>
-          </div>
+      <div class="relative max-w-6xl mx-auto px-6 text-center">
+        <div
+          class="inline-flex items-center space-x-2 bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm font-medium mb-6"
+        >
+          <span>💡</span>
+          <span>Insider Knowledge</span>
         </div>
 
-        <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-100 to-red-100 border border-orange-200 text-orange-800 rounded-full text-sm font-medium mb-8 shadow-lg">
-          <span class="text-2xl mr-2">🇪🇸</span>
-          SPANISH ADVENTURE
-        </div>
-
-        <h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-          <span class="bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent">
-            ¡Hola Barcelona!
+        <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+          Barcelona
+          <span
+            class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+          >
+            Survival Guide
           </span>
         </h1>
-        
-        <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
-          Master Spanish essentials through interactive games, challenges, and immersive experiences. 
-          No prior knowledge needed – just bring your curiosity and let's make learning Spanish an adventure!
+
+        <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+          The unwritten rules, cultural quirks, and insider secrets that will
+          make you feel like a local (or at least help you avoid looking like a
+          total tourist) 🇪🇸
         </p>
 
-        <!-- Learning Stats -->
-        <div class="grid grid-cols-3 gap-6 max-w-md mx-auto mb-12">
-          <div class="text-center">
-            <div class="text-3xl font-bold text-orange-600">{{ totalPhrases }}</div>
-            <div class="text-sm text-gray-500">Phrases</div>
+        <div class="flex flex-wrap justify-center gap-4 text-sm">
+          <div
+            class="bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full border border-gray-200"
+          >
+            <span class="text-gray-600"
+              >📚 {{ tips.length }} Essential Tips</span
+            >
           </div>
-          <div class="text-center">
-            <div class="text-3xl font-bold text-red-600">{{ masteredPhrasesCount }}</div>
-            <div class="text-sm text-gray-500">Mastered</div>
+          <div
+            class="bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full border border-gray-200"
+          >
+            <span class="text-gray-600">🎯 Survival Rate: 99.9%</span>
           </div>
-          <div class="text-center">
-            <div class="text-3xl font-bold text-pink-600">{{ currentStreak }}</div>
-            <div class="text-sm text-gray-500">Day Streak</div>
+          <div
+            class="bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full border border-gray-200"
+          >
+            <span class="text-gray-600">⏱️ 5 min read</span>
           </div>
         </div>
+      </div>
+    </div>
 
-        <!-- Mode Selector -->
-        <div class="flex flex-wrap justify-center gap-4 mb-8">
-          <button 
-            v-for="mode in learningModes" 
-            :key="mode.key"
-            @click="currentMode = mode.key"
-            class="px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:-translate-y-1"
-            :class="currentMode === mode.key 
-              ? 'bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-lg' 
-              : 'bg-white text-gray-600 hover:bg-gray-50 shadow-md'"
+    <!-- Filter Tabs -->
+    <div
+      class="sticky top-20 z-40 bg-white/95 backdrop-blur-lg border-b border-gray-200 py-4"
+    >
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex flex-wrap justify-center gap-2">
+          <button
+            v-for="category in categories"
+            :key="category.id"
+            @click="activeCategory = category.id"
+            :class="
+              activeCategory === category.id
+                ? 'bg-blue-600 text-white shadow-lg'
+                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+            "
+            class="px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 flex items-center space-x-2"
           >
-            <span class="flex items-center">
-              <span class="text-xl mr-2">{{ mode.emoji }}</span>
-              {{ mode.name }}
+            <span>{{ category.emoji }}</span>
+            <span>{{ category.name }}</span>
+            <span class="bg-white/20 text-xs px-2 py-0.5 rounded-full">
+              {{ getTipsByCategory(category.id).length }}
             </span>
           </button>
         </div>
+      </div>
+    </div>
 
-        <!-- Device Instructions -->
-        <div class="text-lg text-orange-600 font-medium">
-          <span class="hidden lg:block">{{ currentModeInstructions.desktop }}</span>
-          <span class="lg:hidden">{{ currentModeInstructions.mobile }}</span>
+    <!-- Tips Grid -->
+    <div class="max-w-6xl mx-auto px-6 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          v-for="(tip, index) in filteredTips"
+          :key="tip.id"
+          class="group bg-white rounded-2xl border border-gray-200 hover:border-blue-300 hover:shadow-xl transition-all duration-500 overflow-hidden"
+          :style="{ animationDelay: `${index * 100}ms` }"
+        >
+          <!-- Tip Header -->
+          <div class="p-6 pb-4">
+            <div class="flex items-start justify-between mb-4">
+              <div
+                class="text-4xl group-hover:scale-110 transition-transform duration-300"
+              >
+                {{ tip.emoji }}
+              </div>
+              <div class="flex items-center space-x-2">
+                <span
+                  :class="getDifficultyColor(tip.difficulty)"
+                  class="px-2 py-1 rounded-full text-xs font-medium"
+                >
+                  {{ tip.difficulty }}
+                </span>
+                <span
+                  :class="getImportanceColor(tip.importance)"
+                  class="px-2 py-1 rounded-full text-xs font-medium"
+                >
+                  {{ tip.importance }}
+                </span>
+              </div>
+            </div>
+
+            <h3
+              class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300"
+            >
+              {{ tip.title }}
+            </h3>
+
+            <p class="text-gray-600 leading-relaxed mb-4">
+              {{ tip.description }}
+            </p>
+          </div>
+
+          <!-- Pro Tip -->
+          <div
+            v-if="tip.proTip"
+            class="mx-6 mb-4 p-4 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl border border-yellow-200"
+          >
+            <div class="flex items-start space-x-2">
+              <span class="text-yellow-600 text-sm">💡</span>
+              <div>
+                <p class="text-sm font-medium text-yellow-800 mb-1">Pro Tip:</p>
+                <p class="text-sm text-yellow-700">{{ tip.proTip }}</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Warning -->
+          <div
+            v-if="tip.warning"
+            class="mx-6 mb-4 p-4 bg-gradient-to-r from-red-50 to-pink-50 rounded-xl border border-red-200"
+          >
+            <div class="flex items-start space-x-2">
+              <span class="text-red-600 text-sm">⚠️</span>
+              <div>
+                <p class="text-sm font-medium text-red-800 mb-1">Watch Out:</p>
+                <p class="text-sm text-red-700">{{ tip.warning }}</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tags -->
+          <div class="px-6 pb-6">
+            <div class="flex flex-wrap gap-2">
+              <span
+                v-for="tag in tip.tags"
+                :key="tag"
+                class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+              >
+                #{{ tag }}
+              </span>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Learning Content -->
-    <section class="py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <!-- Quiz Mode -->
-        <div v-if="currentMode === 'quiz'" class="max-w-4xl mx-auto">
-          <div class="bg-white rounded-3xl shadow-2xl p-8">
-            <div class="text-center mb-8">
-              <h2 class="text-3xl font-bold text-gray-900 mb-4">🎯 Quiz Challenge</h2>
-              <p class="text-gray-600">Test your Spanish knowledge!</p>
+    <!-- Fun Stats Section -->
+    <div class="bg-gradient-to-r from-blue-600 to-purple-600 py-16">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-12">
+          Barcelona by the Numbers 📊
+        </h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div v-for="stat in funStats" :key="stat.label" class="text-center">
+            <div class="text-4xl md:text-5xl font-bold text-white mb-2">
+              {{ stat.value }}
             </div>
-            
-            <div v-if="!quizStarted" class="text-center">
-              <button 
-                @click="startQuiz"
-                class="px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full font-bold text-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
-              >
-                Start Quiz
-              </button>
+            <div class="text-blue-100 text-sm">
+              {{ stat.label }}
             </div>
-            
-            <div v-else-if="currentQuizQuestion" class="space-y-6">
-              <div class="text-center">
-                <div class="text-sm text-gray-500 mb-2">Question {{ quizCurrentIndex + 1 }} of {{ quizQuestions.length }}</div>
-                <div class="w-full bg-gray-200 rounded-full h-2 mb-6">
-                  <div class="bg-gradient-to-r from-orange-400 to-red-400 h-2 rounded-full transition-all duration-300"
-                       :style="{ width: ((quizCurrentIndex + 1) / quizQuestions.length) * 100 + '%' }"></div>
-                </div>
-              </div>
-              
-              <div class="text-center mb-8">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">
-                  What does "{{ currentQuizQuestion.spanish }}" mean in English?
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Emergency Contacts -->
+    <div class="bg-gray-50 py-16">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Emergency Contacts 🚨
+          </h2>
+          <p class="text-gray-600">
+            Save these numbers - you never know when you'll need them!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div
+            v-for="contact in emergencyContacts"
+            :key="contact.service"
+            class="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all duration-300"
+          >
+            <div class="flex items-center space-x-4">
+              <div class="text-3xl">{{ contact.emoji }}</div>
+              <div class="flex-1">
+                <h3 class="font-semibold text-gray-900">
+                  {{ contact.service }}
                 </h3>
-                <button 
-                  @click="playPronunciation(currentQuizQuestion.spanish)"
-                  class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm hover:bg-blue-200 transition-all"
-                >
-                  <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
-                  </svg>
-                  Listen
-                </button>
-              </div>
-              
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <button
-                  v-for="(option, index) in currentQuizQuestion.options"
-                  :key="index"
-                  @click="selectQuizAnswer(option)"
-                  class="p-4 text-left border-2 border-gray-200 rounded-xl hover:border-orange-300 hover:bg-orange-50 transition-all duration-300"
-                  :class="quizSelectedAnswer === option ? 'border-orange-500 bg-orange-50' : ''"
-                >
-                  {{ option }}
-                </button>
-              </div>
-              
-              <div class="text-center" v-if="quizSelectedAnswer">
-                <button 
-                  @click="submitQuizAnswer"
-                  class="px-6 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
-                >
-                  Submit Answer
-                </button>
+                <p class="text-2xl font-bold text-blue-600">
+                  {{ contact.number }}
+                </p>
+                <p class="text-sm text-gray-500">{{ contact.description }}</p>
               </div>
             </div>
-            
-            <div v-else class="text-center">
-              <div class="text-6xl mb-4">🎉</div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-4">Quiz Complete!</h3>
-              <p class="text-gray-600 mb-6">You scored {{ quizScore }} out of {{ quizQuestions.length }}!</p>
-              <button 
-                @click="resetQuiz"
-                class="px-6 py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
-              >
-                Try Again
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Memory Game Mode -->
-        <div v-else-if="currentMode === 'memory'" class="max-w-6xl mx-auto">
-          <div class="bg-white rounded-3xl shadow-2xl p-8">
-            <div class="text-center mb-8">
-              <h2 class="text-3xl font-bold text-gray-900 mb-4">🧠 Memory Game</h2>
-              <p class="text-gray-600">Match Spanish phrases with their English translations!</p>
-            </div>
-            
-            <div v-if="!memoryGameStarted" class="text-center">
-              <button 
-                @click="startMemoryGame"
-                class="px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full font-bold text-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
-              >
-                Start Memory Game
-              </button>
-            </div>
-            
-            <div v-else>
-              <div class="text-center mb-6">
-                <div class="text-sm text-gray-500">Matches: {{ memoryMatches }} / {{ memoryCards.length / 2 }}</div>
-                <div class="text-sm text-gray-500">Attempts: {{ memoryAttempts }}</div>
-              </div>
-              
-              <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                <div
-                  v-for="(card, index) in memoryCards"
-                  :key="index"
-                  @click="flipMemoryCard(index)"
-                  class="aspect-square bg-gradient-to-br from-blue-400 to-purple-500 rounded-xl cursor-pointer transform transition-all duration-300 hover:scale-105"
-                  :class="{
-                    'bg-gradient-to-br from-green-400 to-green-500': card.matched,
-                    'bg-gradient-to-br from-orange-400 to-red-500': card.flipped && !card.matched
-                  }"
-                >
-                  <div class="h-full flex items-center justify-center p-2">
-                    <div v-if="card.flipped || card.matched" class="text-white text-center">
-                      <div class="font-bold text-sm">{{ card.text }}</div>
-                      <div v-if="card.type === 'spanish'" class="text-xs opacity-75 mt-1">{{ card.pronunciation }}</div>
-                    </div>
-                    <div v-else class="text-white text-2xl">?</div>
-                  </div>
-                </div>
-              </div>
-              
-              <div v-if="memoryGameComplete" class="text-center mt-8">
-                <div class="text-6xl mb-4">🎉</div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Congratulations!</h3>
-                <p class="text-gray-600 mb-6">You completed the memory game in {{ memoryAttempts }} attempts!</p>
-                <button 
-                  @click="resetMemoryGame"
-                  class="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
-                >
-                  Play Again
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Story Mode -->
-        <div v-else-if="currentMode === 'story'" class="max-w-4xl mx-auto">
-          <div class="bg-white rounded-3xl shadow-2xl p-8">
-            <div class="text-center mb-8">
-              <h2 class="text-3xl font-bold text-gray-900 mb-4">📚 Barcelona Story Mode</h2>
-              <p class="text-gray-600">Learn Spanish through real Barcelona scenarios!</p>
-            </div>
-            
-            <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6 mb-6">
-              <div class="flex items-center mb-4">
-                <div class="text-4xl mr-4">{{ currentStory.emoji }}</div>
-                <div>
-                  <h3 class="text-xl font-bold text-gray-900">{{ currentStory.title }}</h3>
-                  <p class="text-gray-600">{{ currentStory.setting }}</p>
-                </div>
-              </div>
-              
-              <div class="bg-white rounded-xl p-4 mb-4">
-                <p class="text-gray-700 leading-relaxed">{{ currentStory.scenario }}</p>
-              </div>
-              
-              <div class="space-y-3">
-                <h4 class="font-semibold text-gray-900">Key Phrases for this scenario:</h4>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  <div 
-                    v-for="phrase in currentStory.phrases" 
-                    :key="phrase.english"
-                    class="bg-white rounded-lg p-3 border border-gray-200"
-                  >
-                    <div class="font-medium text-gray-900">{{ phrase.english }}</div>
-                    <div class="text-orange-600 font-semibold">{{ phrase.spanish }}</div>
-                    <div class="text-sm text-gray-500">{{ phrase.pronunciation }}</div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="flex justify-between mt-6">
-                <button 
-                  @click="previousStory"
-                  :disabled="currentStoryIndex === 0"
-                  class="px-4 py-2 bg-gray-200 text-gray-600 rounded-full font-medium disabled:opacity-50 hover:bg-gray-300 transition-all"
-                >
-                  ← Previous
-                </button>
-                <button 
-                  @click="nextStory"
-                  :disabled="currentStoryIndex === stories.length - 1"
-                  class="px-4 py-2 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full font-medium disabled:opacity-50 hover:shadow-lg transition-all"
-                >
-                  Next →
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Traditional Cards Mode (Enhanced) -->
-        <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <SpanishCategoryCard
-            v-for="category in spanishCategories"
-            :key="category.name"
-            :category="category"
-            @phrase-mastered="onPhraseMastered"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Achievement System -->
-    <section class="py-16 bg-gradient-to-r from-orange-900 to-red-900" v-if="achievements.length > 0">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-white mb-4">🏆 Your Achievements</h2>
-          <p class="text-orange-200 text-lg">Celebrate your Spanish learning milestones!</p>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <div 
-            v-for="achievement in achievements" 
-            :key="achievement.id"
-            class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/20 hover:bg-white/20 transition-all duration-300"
-          >
-            <div class="text-4xl mb-3">{{ achievement.emoji }}</div>
-            <h3 class="text-white font-bold mb-2">{{ achievement.title }}</h3>
-            <p class="text-orange-200 text-sm">{{ achievement.description }}</p>
-            <div class="text-xs text-orange-300 mt-2">{{ achievement.date }}</div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Cultural Tips -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">🌟 Cultural Insights</h2>
-          <p class="text-gray-600 text-lg">Learn the culture behind the language</p>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div 
-            v-for="tip in culturalTips" 
-            :key="tip.id"
-            class="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
-          >
-            <div class="text-4xl mb-4">{{ tip.emoji }}</div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">{{ tip.title }}</h3>
-            <p class="text-gray-600 leading-relaxed">{{ tip.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <Footer />
+    </div>
   </div>
+  <Footer />
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed } from "vue";
 
-// Reactive data
-const currentMode = ref('cards')
-const learningProgress = ref(0)
-const masteredPhrasesCount = ref(0)
-const currentStreak = ref(1)
-const achievements = ref([])
+const activeCategory = ref("culture");
 
-// Quiz data
-const quizStarted = ref(false)
-const quizQuestions = ref([])
-const quizCurrentIndex = ref(0)
-const quizSelectedAnswer = ref('')
-const quizScore = ref(0)
+const categories = [
+  { id: "culture", name: "Culture", emoji: "🎭" },
+  { id: "food", name: "Food & Drink", emoji: "🍷" },
+  { id: "transport", name: "Transport", emoji: "🚇" },
+  { id: "social", name: "Social Life", emoji: "🎉" },
+  { id: "practical", name: "Practical", emoji: "🔧" },
+  { id: "safety", name: "Safety", emoji: "🛡️" },
+];
 
-// Memory game data
-const memoryGameStarted = ref(false)
-const memoryCards = ref([])
-const memoryFlippedCards = ref([])
-const memoryMatches = ref(0)
-const memoryAttempts = ref(0)
-const memoryGameComplete = ref(false)
-
-// Story mode data
-const currentStoryIndex = ref(0)
-
-// Floating background elements
-const floatingElements = ref([
-  { emoji: '🇪🇸', x: 10, y: 20, delay: 0, duration: 8 },
-  { emoji: '💃', x: 80, y: 10, delay: 2, duration: 10 },
-  { emoji: '🥘', x: 15, y: 70, delay: 4, duration: 9 },
-  { emoji: '🏛️', x: 85, y: 60, delay: 1, duration: 11 },
-  { emoji: '🎸', x: 50, y: 15, delay: 3, duration: 7 },
-  { emoji: '🌞', x: 70, y: 80, delay: 5, duration: 12 },
-])
-
-// Learning modes
-const learningModes = ref([
-  { key: 'cards', name: 'Flash Cards', emoji: '🃏' },
-  { key: 'quiz', name: 'Quiz Challenge', emoji: '🎯' },
-  { key: 'memory', name: 'Memory Game', emoji: '🧠' },
-  { key: 'story', name: 'Story Mode', emoji: '📚' }
-])
-
-// Spanish categories with enhanced data
-const spanishCategories = ref([
-  {
-    name: 'Greetings',
-    emoji: '👋',
-    color: 'from-blue-500 to-purple-600',
-    bgColor: 'from-blue-50 to-purple-50',
-    phrases: [
-      { english: 'Hello', spanish: 'Hola', pronunciation: 'OH-lah', difficulty: 1 },
-      { english: 'Good Morning', spanish: 'Buenos Días', pronunciation: 'BWAY-nos DEE-ahs', difficulty: 1 },
-      { english: 'Good Afternoon', spanish: 'Buenas Tardes', pronunciation: 'BWAY-nas TAR-des', difficulty: 2 },
-      { english: 'Good Evening', spanish: 'Buenas Noches', pronunciation: 'BWAY-nas NO-ches', difficulty: 2 }
-    ]
-  },
-  {
-    name: 'Basics',
-    emoji: '🎯',
-    color: 'from-green-500 to-teal-600',
-    bgColor: 'from-green-50 to-teal-50',
-    phrases: [
-      { english: 'My name is', spanish: 'Me llamo', pronunciation: 'meh YAH-mo', difficulty: 2 },
-      { english: 'I am ... years old', spanish: 'Yo tengo ... años', pronunciation: 'yo TEN-go ... AH-nyos', difficulty: 3 },
-      { english: 'I come from ...', spanish: '(Yo) soy de ...', pronunciation: 'yo soy deh', difficulty: 2 },
-      { english: 'Thank you', spanish: 'Gracias', pronunciation: 'GRAH-see-ahs', difficulty: 1 },
-      { english: 'Thank you very much', spanish: 'Muchas Gracias', pronunciation: 'MOO-chas GRAH-see-ahs', difficulty: 2 },
-      { english: 'Please', spanish: 'Por favor', pronunciation: 'por fah-VOR', difficulty: 1 },
-      { english: 'Excuse me', spanish: '¡Perdón!', pronunciation: 'per-DOHN', difficulty: 2 },
-      { english: "I don't speak Spanish", spanish: 'No hablo español', pronunciation: 'no AH-blo es-pah-NYOL', difficulty: 3 },
-      { english: "You're welcome", spanish: 'De nada', pronunciation: 'deh NAH-dah', difficulty: 1 }
-    ]
-  },
-  {
-    name: 'Common Questions',
-    emoji: '❓',
-    color: 'from-orange-500 to-red-600',
-    bgColor: 'from-orange-50 to-red-50',
-    phrases: [
-      { english: 'Where is ...?', spanish: '¿Dónde está ...?', pronunciation: 'DOHN-deh es-TAH', difficulty: 3 },
-      { english: 'How much is it?', spanish: '¿Cuánto cuesta?', pronunciation: 'KWAN-to KWES-tah', difficulty: 3 },
-      { english: 'What time is it?', spanish: '¿Qué hora es?', pronunciation: 'keh OH-rah es', difficulty: 3 },
-      { english: 'Can you help me?', spanish: '¿Puede ayudarme?', pronunciation: 'PWEH-deh ah-yu-DAR-meh', difficulty: 4 },
-      { english: 'Do you speak English?', spanish: '¿Habla inglés?', pronunciation: 'AH-blah in-GLES', difficulty: 3 }
-    ]
-  },
-  {
-    name: 'Directions',
-    emoji: '🧭',
-    color: 'from-teal-500 to-green-600',
-    bgColor: 'from-teal-50 to-green-50',
-    phrases: [
-      { english: 'Left', spanish: 'Izquierda', pronunciation: 'ees-kee-ER-dah', difficulty: 2 },
-      { english: 'Right', spanish: 'Derecha', pronunciation: 'deh-REH-chah', difficulty: 2 },
-      { english: 'Straight ahead', spanish: 'Todo recto', pronunciation: 'TO-do REK-to', difficulty: 2 },
-      { english: 'Near', spanish: 'Cerca', pronunciation: 'SER-kah', difficulty: 1 },
-      { english: 'Far', spanish: 'Lejos', pronunciation: 'LEH-hos', difficulty: 1 }
-    ]
-  }
-])
-
-// Story scenarios
-const stories = ref([
-  {
-    title: 'Arriving at Barcelona Airport',
-    emoji: '✈️',
-    setting: 'El Prat Airport, Barcelona',
-    scenario: 'You\'ve just landed in Barcelona and need to navigate the airport, find transportation to the city, and communicate with airport staff.',
-    phrases: [
-      { english: 'Where is the exit?', spanish: '¿Dónde está la salida?', pronunciation: 'DOHN-deh es-TAH lah sah-LEE-dah' },
-      { english: 'How do I get to the city center?', spanish: '¿Cómo llego al centro de la ciudad?', pronunciation: 'KO-mo YEH-go ahl SEN-tro deh lah see-yu-DAHD' },
-      { english: 'Where can I buy a metro ticket?', spanish: '¿Dónde puedo comprar un billete de metro?', pronunciation: 'DOHN-deh PWEH-do kom-PRAR oon bee-YEH-teh deh MEH-tro' }
-    ]
-  },
-  {
-    title: 'Checking into Your Accommodation',
-    emoji: '🏨',
-    setting: 'Hotel or Apartment in Barcelona',
-    scenario: 'You\'re checking into your accommodation and need to communicate with the reception staff about your reservation and room details.',
-    phrases: [
-      { english: 'I have a reservation', spanish: 'Tengo una reserva', pronunciation: 'TEN-go OO-nah reh-SER-vah' },
-      { english: 'What time is check-in?', spanish: '¿A qué hora es el check-in?', pronunciation: 'ah keh OH-rah es el check-in' },
-      { english: 'Where is the elevator?', spanish: '¿Dónde está el ascensor?', pronunciation: 'DOHN-deh es-TAH el ah-sen-SOR' }
-    ]
-  },
-  {
-    title: 'Ordering Food at a Tapas Bar',
-    emoji: '🍤',
-    setting: 'Traditional Tapas Bar in Gothic Quarter',
-    scenario: 'You\'re at a local tapas bar and want to order some traditional Spanish dishes. The menu is in Spanish and you need to communicate with the waiter.',
-    phrases: [
-      { english: 'What do you recommend?', spanish: '¿Qué me recomienda?', pronunciation: 'keh meh reh-ko-mee-EN-dah' },
-      { english: 'I would like...', spanish: 'Me gustaría...', pronunciation: 'meh goos-tah-REE-ah' },
-      { english: 'The bill, please', spanish: 'La cuenta, por favor', pronunciation: 'lah KWEN-tah por fah-VOR' }
-    ]
-  }
-])
-
-// Cultural tips
-const culturalTips = ref([
+const tips = [
   {
     id: 1,
-    emoji: '🤝',
-    title: 'Greeting Etiquette',
-    description: 'In Spain, people often greet with two kisses on the cheek (starting with the right). A handshake is common in formal situations.'
+    category: "culture",
+    emoji: "🗣️",
+    title: "Spanish People Are LOUD",
+    description:
+      "Don't be alarmed if conversations sound like arguments, that's just normal volume! Spanish people are passionate and expressive.",
+    proTip: "Join in! Being quiet might make you seem unfriendly.",
+    difficulty: "Easy",
+    importance: "High",
+    tags: ["communication", "social", "first-impression"],
   },
   {
     id: 2,
-    emoji: '🕐',
-    title: 'Meal Times',
-    description: 'Lunch is typically eaten between 2-4 PM, and dinner starts around 9-10 PM. Restaurants may be closed during siesta time (2-5 PM).'
+    category: "culture",
+    emoji: "😴",
+    title: "Siesta is REAL",
+    description:
+      "Between 2-5 PM, many shops close. Don't plan important errands during this time, even banks and government offices shut down.",
+    warning:
+      "Pharmacies and some tourist areas stay open, but most local businesses close.",
+    difficulty: "Easy",
+    importance: "High",
+    tags: ["schedule", "shopping", "planning"],
   },
   {
     id: 3,
-    emoji: '🗣️',
-    title: 'Speaking Volume',
-    description: 'Spanish people tend to speak more loudly and expressively than in other cultures. This is normal and shows engagement in conversation!'
+    category: "food",
+    emoji: "🍽️",
+    title: "Dinner at 10 PM is Normal",
+    description:
+      "Restaurants don't open for dinner until 8 PM. Eating at 6 PM marks you as a tourist immediately.",
+    proTip:
+      "Have a late afternoon snack (merienda) to survive until dinner time.",
+    difficulty: "Medium",
+    importance: "Medium",
+    tags: ["dining", "schedule", "culture"],
   },
   {
     id: 4,
-    emoji: '💰',
-    title: 'Tipping Culture',
-    description: 'Tipping is not mandatory in Spain. Rounding up the bill or leaving 5-10% is appreciated but not expected.'
+    category: "transport",
+    emoji: "🚇",
+    title: "Metro Pickpockets are Ninjas",
+    description:
+      "They work in teams and are incredibly skilled. Keep your phone and wallet in front pockets, never in your backpack.",
+    warning: "Tourist areas like Las Ramblas and Sagrada Familia are hotspots.",
+    difficulty: "Hard",
+    importance: "Critical",
+    tags: ["safety", "metro", "pickpockets"],
   },
   {
     id: 5,
-    emoji: '🚶',
-    title: 'Walking Pace',
-    description: 'Barcelona has a relaxed pace of life. Take time to enjoy your surroundings and don\'t rush through conversations.'
+    category: "social",
+    emoji: "🍻",
+    title: "Botellón Culture",
+    description:
+      "Pre-drinking in parks or beaches before going out is totally normal and legal (mostly). Buy drinks from supermarkets, not bars.",
+    proTip: "Bring a speaker, snacks, and make friends, it's a social event!",
+    difficulty: "Easy",
+    importance: "Medium",
+    tags: ["nightlife", "social", "budget"],
   },
   {
     id: 6,
-    emoji: '🎉',
-    title: 'Enthusiasm',
-    description: 'Spanish people appreciate when foreigners try to speak their language, even if imperfect. Your effort will be warmly received!'
+    category: "practical",
+    emoji: "💳",
+    title: "Cash is Still King",
+    description:
+      "Many small bars, markets, and local shops only accept cash. Always carry some euros with you.",
+    warning: "Some places have minimum card amounts (usually €10-20).",
+    difficulty: "Easy",
+    importance: "High",
+    tags: ["money", "shopping", "practical"],
+  },
+  {
+    id: 7,
+    category: "culture",
+    emoji: "👋",
+    title: "Two Kisses, Always",
+    description:
+      "Greeting with two kisses (air kisses) is standard, even for people you just met. Start with the right cheek.",
+    proTip: "When in doubt, follow the other person's lead.",
+    difficulty: "Medium",
+    importance: "Medium",
+    tags: ["greetings", "social", "etiquette"],
+  },
+  {
+    id: 8,
+    category: "food",
+    emoji: "🥘",
+    title: "Paella is NOT from Barcelona",
+    description:
+      "It's from Valencia! Locals might judge you for ordering it. Try \"fideuà\" instead, it's the Catalan version with noodles.",
+    warning:
+      "Never, EVER ask for paella with chorizo. That's culinary blasphemy.",
+    difficulty: "Easy",
+    importance: "Medium",
+    tags: ["food", "culture", "local-knowledge"],
+  },
+  {
+    id: 9,
+    category: "transport",
+    emoji: "🛵",
+    title: "Motorbikes Own the Streets",
+    description:
+      "They drive on sidewalks, between cars, and appear out of nowhere. Always look both ways, even on pedestrian streets.",
+    warning: "They have right of way in bike lanes, don't walk there!",
+    difficulty: "Medium",
+    importance: "High",
+    tags: ["traffic", "safety", "pedestrian"],
+  },
+  {
+    id: 10,
+    category: "practical",
+    emoji: "🏠",
+    title: "Apartment Hunting is War",
+    description:
+      "Good apartments disappear in hours. Come prepared with all documents, first month + deposit + agency fee in cash.",
+    proTip:
+      "Use Idealista, Fotocasa, and join Facebook groups for international students.",
+    difficulty: "Hard",
+    importance: "Critical",
+    tags: ["housing", "documents", "money"],
+  },
+  {
+    id: 11,
+    category: "culture",
+    emoji: "🗣️",
+    title: "Catalan vs Spanish Drama",
+    description:
+      'Barcelona speaks Catalan first, Spanish second. Don\'t worry, everyone speaks Spanish, but learning "Bon dia" goes a long way.',
+    proTip: 'Street signs are in Catalan. "Carrer" = Street, "Plaça" = Square.',
+    difficulty: "Medium",
+    importance: "Medium",
+    tags: ["language", "culture", "respect"],
+  },
+  {
+    id: 12,
+    category: "social",
+    emoji: "🌅",
+    title: "Clubs Open at 1 AM",
+    description:
+      "Going to a club before midnight is like arriving to a party before the host. Pre-game properly!",
+    proTip: "Check guest lists online for free entry before midnight.",
+    difficulty: "Easy",
+    importance: "Low",
+    tags: ["nightlife", "clubs", "timing"],
+  },
+  {
+    id: 13,
+    category: "food",
+    emoji: "☕",
+    title: "Coffee Culture Shock",
+    description:
+      "Café con leche is breakfast only. Ordering it after lunch is weird. Cortado is acceptable anytime.",
+    warning:
+      'Make sure to always say "para llevar" if you want to order it "to-go".',
+    difficulty: "Easy",
+    importance: "Low",
+    tags: ["coffee", "culture", "timing"],
+  },
+  {
+    id: 14,
+    category: "practical",
+    emoji: "📱",
+    title: 'WiFi Password is Always "12345678"',
+    description:
+      "Or some variation. Most cafés and restaurants have free WiFi, just ask for the password.",
+    proTip: "Download offline maps before exploring, data can be expensive.",
+    difficulty: "Easy",
+    importance: "Medium",
+    tags: ["internet", "practical", "budget"],
+  },
+  {
+    id: 15,
+    category: "safety",
+    emoji: "🎒",
+    title: "Backpack = Tourist Target",
+    description:
+      "Wear it in front in crowded areas, or better yet, use a crossbody bag. Pickpockets love easy backpack access.",
+    warning: "Never put anything valuable in outer pockets.",
+    difficulty: "Easy",
+    importance: "High",
+    tags: ["safety", "pickpockets", "tourist"],
+  },
+];
+
+const funStats = [
+  { value: "2-5 PM", label: "Siesta Hours" },
+  { value: "10 PM", label: "Dinner Time" },
+  { value: "2 Kisses", label: "Standard Greeting" },
+  { value: "€20", label: "Min Card Payment" },
+];
+
+const emergencyContacts = [
+  {
+    service: "Emergency Services",
+    number: "112",
+    emoji: "🚨",
+    description: "Police, Fire, Medical",
+  },
+  {
+    service: "Local Police",
+    number: "092",
+    emoji: "👮",
+    description: "Guardia Urbana",
+  },
+  {
+    service: "National Police",
+    number: "091",
+    emoji: "🚔",
+    description: "For serious crimes",
+  },
+  {
+    service: "Medical Emergency",
+    number: "061",
+    emoji: "🏥",
+    description: "Ambulance & Medical",
+  },
+];
+
+const filteredTips = computed(() => {
+  if (activeCategory.value === "all") {
+    return tips;
   }
-])
+  return tips.filter((tip) => tip.category === activeCategory.value);
+});
 
-// Computed properties
-const totalPhrases = computed(() => {
-  return spanishCategories.value.reduce((total, category) => total + category.phrases.length, 0)
-})
+const getTipsByCategory = (categoryId) => {
+  if (categoryId === "all") return tips;
+  return tips.filter((tip) => tip.category === categoryId);
+};
 
-const currentModeInstructions = computed(() => {
-  const instructions = {
-    cards: {
-      desktop: 'Hover over cards to see translations and pronunciation',
-      mobile: 'Tap cards to see translations and pronunciation'
-    },
-    quiz: {
-      desktop: 'Test your knowledge with interactive quizzes',
-      mobile: 'Test your knowledge with interactive quizzes'
-    },
-    memory: {
-      desktop: 'Match Spanish phrases with their English translations',
-      mobile: 'Match Spanish phrases with their English translations'
-    },
-    story: {
-      desktop: 'Learn through immersive Barcelona scenarios',
-      mobile: 'Learn through immersive Barcelona scenarios'
-    }
-  }
-  return instructions[currentMode.value] || instructions.cards
-})
+const getDifficultyColor = (difficulty) => {
+  const colors = {
+    Easy: "bg-green-100 text-green-800",
+    Medium: "bg-yellow-100 text-yellow-800",
+    Hard: "bg-red-100 text-red-800",
+  };
+  return colors[difficulty] || "bg-gray-100 text-gray-800";
+};
 
-const currentQuizQuestion = computed(() => {
-  return quizQuestions.value[quizCurrentIndex.value] || null
-})
-
-const currentStory = computed(() => {
-  return stories.value[currentStoryIndex.value] || stories.value[0]
-})
-
-// Quiz Methods
-const startQuiz = () => {
-  quizStarted.value = true
-  generateQuizQuestions()
-}
-
-const generateQuizQuestions = () => {
-  const allPhrases = spanishCategories.value.flatMap(cat => cat.phrases)
-  const selectedPhrases = allPhrases.sort(() => 0.5 - Math.random()).slice(0, 10)
-  
-  quizQuestions.value = selectedPhrases.map(phrase => {
-    const wrongAnswers = allPhrases
-      .filter(p => p.english !== phrase.english)
-      .sort(() => 0.5 - Math.random())
-      .slice(0, 3)
-      .map(p => p.english)
-    
-    const options = [phrase.english, ...wrongAnswers].sort(() => 0.5 - Math.random())
-    
-    return {
-      spanish: phrase.spanish,
-      correct: phrase.english,
-      options: options,
-      pronunciation: phrase.pronunciation
-    }
-  })
-  
-  quizCurrentIndex.value = 0
-  quizScore.value = 0
-}
-
-const selectQuizAnswer = (answer) => {
-  quizSelectedAnswer.value = answer
-}
-
-const submitQuizAnswer = () => {
-  if (quizSelectedAnswer.value === currentQuizQuestion.value.correct) {
-    quizScore.value++
-  }
-  
-  quizSelectedAnswer.value = ''
-  
-  if (quizCurrentIndex.value < quizQuestions.value.length - 1) {
-    quizCurrentIndex.value++
-  } else {
-    // Quiz finished
-    updateProgress(Math.round((quizScore.value / quizQuestions.value.length) * 100))
-  }
-}
-
-const resetQuiz = () => {
-  quizStarted.value = false
-  quizQuestions.value = []
-  quizCurrentIndex.value = 0
-  quizSelectedAnswer.value = ''
-  quizScore.value = 0
-}
-
-// Memory Game Methods
-const startMemoryGame = () => {
-  memoryGameStarted.value = true
-  generateMemoryCards()
-}
-
-const generateMemoryCards = () => {
-  const selectedPhrases = spanishCategories.value
-    .flatMap(cat => cat.phrases)
-    .sort(() => 0.5 - Math.random())
-    .slice(0, 8)
-  
-  const cards = []
-  selectedPhrases.forEach(phrase => {
-    cards.push({
-      id: phrase.english,
-      text: phrase.english,
-      type: 'english',
-      flipped: false,
-      matched: false
-    })
-    cards.push({
-      id: phrase.english,
-      text: phrase.spanish,
-      type: 'spanish',
-      pronunciation: phrase.pronunciation,
-      flipped: false,
-      matched: false
-    })
-  })
-  
-  memoryCards.value = cards.sort(() => 0.5 - Math.random())
-  memoryFlippedCards.value = []
-  memoryMatches.value = 0
-  memoryAttempts.value = 0
-  memoryGameComplete.value = false
-}
-
-const flipMemoryCard = (index) => {
-  if (memoryCards.value[index].flipped || memoryCards.value[index].matched || memoryFlippedCards.value.length >= 2) {
-    return
-  }
-  
-  memoryCards.value[index].flipped = true
-  memoryFlippedCards.value.push(index)
-  
-  if (memoryFlippedCards.value.length === 2) {
-    memoryAttempts.value++
-    setTimeout(checkMemoryMatch, 1000)
-  }
-}
-
-const checkMemoryMatch = () => {
-  const [first, second] = memoryFlippedCards.value
-  const firstCard = memoryCards.value[first]
-  const secondCard = memoryCards.value[second]
-  
-  if (firstCard.id === secondCard.id) {
-    firstCard.matched = true
-    secondCard.matched = true
-    memoryMatches.value++
-    
-    if (memoryMatches.value === memoryCards.value.length / 2) {
-      memoryGameComplete.value = true
-      updateProgress(Math.min(100, learningProgress.value + 10))
-    }
-  } else {
-    firstCard.flipped = false
-    secondCard.flipped = false
-  }
-  
-  memoryFlippedCards.value = []
-}
-
-const resetMemoryGame = () => {
-  memoryGameStarted.value = false
-  memoryCards.value = []
-  memoryFlippedCards.value = []
-  memoryMatches.value = 0
-  memoryAttempts.value = 0
-  memoryGameComplete.value = false
-}
-
-// Story Methods
-const nextStory = () => {
-  if (currentStoryIndex.value < stories.value.length - 1) {
-    currentStoryIndex.value++
-  }
-}
-
-const previousStory = () => {
-  if (currentStoryIndex.value > 0) {
-    currentStoryIndex.value--
-  }
-}
-
-// General Methods
-const updateProgress = (progress) => {
-  learningProgress.value = Math.min(100, Math.max(learningProgress.value, progress))
-  saveProgress()
-}
-
-const onPhraseMastered = (phrase) => {
-  masteredPhrasesCount.value++
-  updateProgress(Math.round((masteredPhrasesCount.value / totalPhrases.value) * 100))
-  
-  // Add achievements
-  if (masteredPhrasesCount.value === 1) {
-    addAchievement('first-phrase', '🎉', 'First Steps', 'Mastered your first Spanish phrase!')
-  } else if (masteredPhrasesCount.value === 10) {
-    addAchievement('ten-phrases', '🔥', 'Getting Hot', 'Mastered 10 Spanish phrases!')
-  } else if (masteredPhrasesCount.value === 25) {
-    addAchievement('quarter-master', '⭐', 'Quarter Master', 'Mastered 25 Spanish phrases!')
-  }
-}
-
-const addAchievement = (id, emoji, title, description) => {
-  if (!achievements.value.find(a => a.id === id)) {
-    achievements.value.push({
-      id,
-      emoji,
-      title,
-      description,
-      date: new Date().toLocaleDateString()
-    })
-    saveProgress()
-  }
-}
-
-const playPronunciation = (text) => {
-  if ('speechSynthesis' in window) {
-    const utterance = new SpeechSynthesisUtterance(text)
-    utterance.lang = 'es-ES'
-    utterance.rate = 0.8
-    speechSynthesis.speak(utterance)
-  }
-}
-
-const saveProgress = () => {
-  const data = {
-    progress: learningProgress.value,
-    masteredPhrases: masteredPhrasesCount.value,
-    streak: currentStreak.value,
-    achievements: achievements.value
-  }
-  localStorage.setItem('spanish-learning-progress', JSON.stringify(data))
-}
-
-const loadProgress = () => {
-  const saved = localStorage.getItem('spanish-learning-progress')
-  if (saved) {
-    const data = JSON.parse(saved)
-    learningProgress.value = data.progress || 0
-    masteredPhrasesCount.value = data.masteredPhrases || 0
-    currentStreak.value = data.streak || 1
-    achievements.value = data.achievements || []
-  }
-}
-
-// Lifecycle
-onMounted(() => {
-  loadProgress()
-})
+const getImportanceColor = (importance) => {
+  const colors = {
+    Low: "bg-gray-100 text-gray-800",
+    Medium: "bg-blue-100 text-blue-800",
+    High: "bg-orange-100 text-orange-800",
+    Critical: "bg-red-100 text-red-800",
+  };
+  return colors[importance] || "bg-gray-100 text-gray-800";
+};
 </script>
-
-<style scoped>
-@keyframes float {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  25% { transform: translateY(-20px) rotate(5deg); }
-  50% { transform: translateY(-10px) rotate(-5deg); }
-  75% { transform: translateY(-15px) rotate(3deg); }
-}
-
-.animate-float {
-  animation: float 8s ease-in-out infinite;
-}
-
-/* Custom scrollbar for better UX */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #f59e0b, #ef4444);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #d97706, #dc2626);
-}
-</style>
