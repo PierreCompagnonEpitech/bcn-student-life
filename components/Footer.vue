@@ -79,41 +79,55 @@
             </li>
             <li>
               <a
-                href="#"
+                @click="$router.push('/spanish-essentials')"
                 class="text-gray-400 hover:text-white transition-colors"
-                >Contact Us</a
+                >Spanish Essentials</a
+              >
+            </li>
+            <li>
+              <a
+                @click="$router.push('/epitech-barcelona')"
+                class="text-gray-400 hover:text-white transition-colors"
+                >EPITECH Barcelona</a
               >
             </li>
           </ul>
         </div>
         <div>
           <h3 class="font-bold text-lg mb-6">Resources</h3>
-          <ul class="space-y-3">
+          <ul class="space-y-3 hover:text-underline">
             <li>
               <a
-                href="#"
-                class="text-gray-400 hover:text-white transition-colors"
-                >Student Guide</a
+                @click="$router.push('/live-in-barcelona/administrative-formalities')"
+                class="text-gray-400 hover:text-white hover:text-underline transition-colors"
+                >Administrative Formalities</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="text-gray-400 hover:text-white transition-colors"
+                @click="$router.push('/live-in-barcelona/accomodations')"
+                class="text-gray-400 hover:text-white hover:text-underline transition-colors"
                 >Housing Help</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="text-gray-400 hover:text-white transition-colors"
-                >Language Exchange</a
+                @click="$router.push('/live-in-barcelona/lifestyle')"
+                class="text-gray-400 hover:text-white hover:text-underline transition-colors"
+                >Lifestyle </a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="text-gray-400 hover:text-white transition-colors"
+                @click="$router.push('/live-in-barcelona/transports')"
+                class="text-gray-400 hover:text-white hover:text-underline transition-colors"
+                >Transportation</a
+              >
+            </li>
+            <li>
+              <a
+                @click="$router.push('/tips-and-tricks')"
+                class="text-gray-400 hover:text-white hover:text-underline transition-colors"
                 >Emergency Contacts</a
               >
             </li>
@@ -123,7 +137,10 @@
       <div
         class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
       >
-        <p>&copy; EPITECH Barcelona. All rights reserved.</p>
+        <p>
+          &copy; Made with ❤️ by Angel Halouane - EPITECH Barcelona. All rights
+          reserved.
+        </p>
       </div>
     </div>
   </footer>

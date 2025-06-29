@@ -80,7 +80,7 @@
             <div class="grid grid-cols-2 gap-4">
               <div class="space-y-4">
                 <div
-                  class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300"
+                  class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6"
                 >
                   <div
                     class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-4"
@@ -103,7 +103,7 @@
                   <p class="text-gray-600 text-sm">Find your perfect home</p>
                 </div>
                 <div
-                  class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300"
+                  class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-6"
                 >
                   <div
                     class="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center mb-4"
@@ -128,7 +128,7 @@
               </div>
               <div class="space-y-4">
                 <div
-                  class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300"
+                  class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6"
                 >
                   <div
                     class="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center mb-4"
@@ -157,7 +157,7 @@
                   <p class="text-gray-600 text-sm">Navigate the city</p>
                 </div>
                 <div
-                  class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300"
+                  class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-6"
                 >
                   <div
                     class="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center mb-4"
@@ -338,7 +338,7 @@
               <div
                 class="bg-gradient-to-r from-red-400 to-pink-500 text-white rounded-2xl p-4 mb-4"
               >
-                <div class="text-3xl font-bold">€1-4</div>
+                <div class="text-3xl font-bold">€3-5</div>
                 <div class="text-sm opacity-90">Per tapas dish</div>
               </div>
               <p class="text-gray-600 leading-relaxed">
@@ -388,7 +388,7 @@
               </div>
               <p class="text-gray-600 leading-relaxed">
                 Say goodbye to seasonal depression! Barcelona has more sunny
-                days than California - your Instagram will never look better!
+                days than California, your Instagram will never look better!
               </p>
             </div>
           </div>

@@ -8,7 +8,7 @@
         class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"
       ></div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
+        <div class="text-center mb-4">
           <div
             class="inline-flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm border border-blue-200 text-blue-800 rounded-full text-sm font-medium mb-8 shadow-lg"
           >
@@ -52,7 +52,7 @@
     <!-- Categories Grid -->
     <section class="p-10 bg-gradient-to-bl from-purple-50 via-white to-blue-50">
       <div class="max-w-7xl mx-auto px-8 sm:px-6 lg:px-2">
-        <div class="text-center mb-16">
+        <div class="text-center mb-2">
           <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Explore by Category
           </h2>
@@ -136,25 +136,7 @@
               Start your Barcelona adventure today and discover why this city is
               the perfect place for students
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                class="px-8 py-4 bg-white text-blue-600 rounded-full font-bold text-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center"
-              >
-                Plan Your Visit
-                <svg
-                  class="w-5 h-5 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-1.447-.894L15 4m0 13V4m0 0L9 7"
-                  ></path>
-                </svg>
-              </button>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">  
               <button
                 class="px-8 py-4 bg-blue-500/20 backdrop-blur-sm border-2 border-white/30 text-white rounded-full font-bold text-lg hover:bg-white/10 transform hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center"
               >

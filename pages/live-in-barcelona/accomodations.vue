@@ -228,7 +228,8 @@ const accommodations = ref([
     title: "Livensa Living",
     location:
       "Two (02)properties: Marina, Diagonal Alto; Bedrooms with kitchen, Rooftop, 01 min from Bus stop.",
-    redirectUrl: "https://www.livensaliving.com/en/student-accommodation-barcelona/",
+    redirectUrl:
+      "https://www.livensaliving.com/en/student-accommodation-barcelona/",
   },
   {
     imageUrl: "/accomodations/xior.png",
@@ -264,6 +265,74 @@ const accommodations = ref([
     location:
       "Well located in a very central area., Affordable prices, Discount with universities.",
     redirectUrl: "https://grupomestral.com",
+  },
+]);
+
+const housingResources = ref([
+  {
+    name: "Idealista",
+    url: "https://www.idealista.com/en/",
+    description: "Popular platform for renting apartments and rooms.",
+  },
+  {
+    name: "Uniplaces accomodations",
+    url: "https://www.uniplaces.com/accommodation/barcelona",
+    description: "Specializes in student accommodation across Europe.",
+  },
+  {
+    name: "Barcelona tbs education",
+    url: "https://barcelona.tbs-education.com/student-services/accommodation",
+    description:
+      "TBS Education offers a range of student accommodation options in Barcelona.",
+  },
+  {
+    name: "Habitatge Jove",
+    url: "https://www.habitatgejove.com/webv2c/en/pisos.asp",
+    description:
+      "A platform for young people to find affordable housing options.",
+  },
+    {
+    name: "Barcelona Residencias",
+    url: "https://www.barcelonaresidencias.com/rooms-students-barcelona",
+    description:
+      "A directory of student residences in Barcelona with various options.",
+  },
+  {
+    name: "Fotocasa",
+    url: "https://www.fotocasa.es/en/",
+    description: "Another well-known site for finding rental properties.",
+  },
+  {
+    name: "Habitaclia",
+    url: "https://www.habitaclia.com/",
+    description: "Focuses on Catalonia, with many listings in Barcelona.",
+  },
+  {
+    name: "Badi",
+    url: "https://badi.com/en",
+    description: "Great for finding shared accommodations and roommates.",
+  },
+  {
+    name: "HousingAnywhere",
+    url: "https://housinganywhere.com/",
+    description:
+      "A platform for students to find rooms and apartments for mid to long-term stays.",
+  },
+  {
+    name: "Spotahome",
+    url: "https://www.spotahome.com/",
+    description: "Offers verified listings for mid to long-term rentals.",
+  },
+  {
+    name: "Uniplaces",
+    url: "https://www.uniplaces.com/",
+    description: "Specializes in student accommodation across Europe.",
+  },
+  {
+    name: "Nestpick",
+    url: "https://www.nestpick.com/",
+    description:
+      "Aggregates listings from various platforms for furnished apartments.",
   },
 ]);
 </script>

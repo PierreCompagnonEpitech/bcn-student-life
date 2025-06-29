@@ -446,34 +446,6 @@
       </div>
     </section>
 
-    <!-- Cultural Tips -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">
-            🌟 Cultural Insights
-          </h2>
-          <p class="text-gray-600 text-lg">
-            Learn the culture behind the language
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div
-            v-for="tip in culturalTips"
-            :key="tip.id"
-            class="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
-          >
-            <div class="text-4xl mb-4">{{ tip.emoji }}</div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">
-              {{ tip.title }}
-            </h3>
-            <p class="text-gray-600 leading-relaxed">{{ tip.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <Footer />
   </div>
 </template>

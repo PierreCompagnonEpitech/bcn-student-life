@@ -61,20 +61,20 @@
               class="w-full h-80 lg:h-96 object-cover"
             />
             <div
-              class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"
+              class="absolute inset-0"
             ></div>
           </div>
         </div>
 
         <!-- Cards Grid -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           <div
             v-for="(item, index) in tab"
             :key="index"
             class="group relative overflow-hidden bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
             @click="navigateTo(item.redirectUrl)"
           >
-            <div class="aspect-w-16 aspect-h-12">
+            <div class="aspect-w-16 aspect-h-12 ">
               <img
                 :src="item.imageUrl || '/Rectangle23.png'"
                 :alt="item.title"
