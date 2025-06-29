@@ -60,9 +60,7 @@
               alt="Barcelona Student Life"
               class="w-full h-80 lg:h-96 object-cover"
             />
-            <div
-              class="absolute inset-0"
-            ></div>
+            <div class="absolute inset-0"></div>
           </div>
         </div>
 
@@ -74,7 +72,7 @@
             class="group relative overflow-hidden bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
             @click="navigateTo(item.redirectUrl)"
           >
-            <div class="aspect-w-16 aspect-h-12 ">
+            <div class="aspect-w-16 aspect-h-12">
               <img
                 :src="item.imageUrl || '/Rectangle23.png'"
                 :alt="item.title"
@@ -193,6 +191,7 @@ const tab = ref([
     redirectUrl: "live-in-barcelona/accomodations",
   },
   {
+    icon: "Bus",
     imageUrl: "/Rectangle25.png",
     title: "Transport",
     redirectUrl: "live-in-barcelona/transports",

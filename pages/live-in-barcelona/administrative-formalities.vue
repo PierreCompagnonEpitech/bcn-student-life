@@ -287,6 +287,153 @@
             </div>
           </div>
 
+          <!-- Residence Permit Section NIE -->
+          <div class="bg-white rounded-3xl shadow-lg overflow-hidden">
+            <div
+              class="bg-gradient-to-r from-teal-500 to-emerald-500 p-8 text-white"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mr-4"
+                >
+                  <span class="text-white font-bold text-xl">2</span>
+                </div>
+                <h2 class="text-3xl font-bold">Residence Permit (NIE)</h2>
+              </div>
+              <p class="text-emerald-100 text-lg">
+                For european citizens staying longer than 3 months
+              </p>
+            </div>
+            <div class="p-8">
+              <div class="grid lg:grid-cols-2 gap-8">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-900 mb-4">
+                    Application Process
+                  </h3>
+                  <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                      <div
+                        class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center"
+                      >
+                        <span class="text-white font-bold text-sm">1</span>
+                      </div>
+                      <div>
+                        <a
+                          href=" https://sede.administracionespublicas.gob.es/icpplus/"
+                          class="text-gray-700 font-medium hover:underline">
+                          Book a Cita Previa (Appointment)
+                        </a>
+                        <p class="text-gray-600 text-sm">
+                          Choose a police station with available appointments and book one.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                      <div
+                        class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center"
+                      >
+                        <span class="text-white font-bold text-sm">2</span>
+                      </div>
+                      <div>
+                        <a
+                          href="https://www.exteriores.gob.es/Embajadas/telaviv/en/ServiciosConsulares/Paginas/Consular/NIE.aspx"
+                          class="text-gray-700 font-medium hover:underline">
+                          Prepare the Required Documents
+                        </a>
+                        <p class="text-gray-600 text-sm">
+                          Make sure that you have all necessary documents ready for your appointment.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                      <div
+                        class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center"
+                      >
+                        <span class="text-white font-bold text-sm">3</span>
+                      </div>
+                      <div>
+                        <a
+                          class="text-gray-700 font-medium">
+                          Go to Your Appointment (probably going to be in Madrid)
+                        </a>
+                        <p class="text-gray-600 text-sm">
+                          You may receive the NIE on the spot or have to return in a few days to pick it up.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-gray-900 mb-4">
+                    Why you need a NIE in Spain?
+                  </h3>
+                  <div class="bg-emerald-50 rounded-xl p-6">
+                    <ul class="text-emerald-700 space-y-3">
+                      <li class="flex items-start space-x-2">
+                        <svg
+                          class="w-5 h-5 mt-0.5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <span>Working legally (needed for work contracts and payroll)</span>
+                      </li>
+                      <li class="flex items-start space-x-2">
+                        <svg
+                          class="w-5 h-5 mt-0.5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <span
+                          >Paying taxes and registering with the social security system</span
+                        >
+                      </li>
+                      <li class="flex items-start space-x-2">
+                        <svg
+                          class="w-5 h-5 mt-0.5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <span>Opening a bank account</span>
+                      </li>
+                      <li class="flex items-start space-x-2">
+                        <svg
+                          class="w-5 h-5 mt-0.5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <span>Some memberships require a NIE</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Residence Permit Section -->
           <div class="bg-white rounded-3xl shadow-lg overflow-hidden">
             <div
@@ -301,7 +448,7 @@
                 <h2 class="text-3xl font-bold">Residence Permit (TIE)</h2>
               </div>
               <p class="text-purple-100 text-lg">
-                For stays longer than 3 months
+                For none european citizens staying longer than 3 months
               </p>
             </div>
             <div class="p-8">
@@ -318,9 +465,11 @@
                         <span class="text-white font-bold text-sm">1</span>
                       </div>
                       <div>
-                        <p class="text-gray-700 font-medium">
+                        <a
+                          href="https://mpt.gob.es/en/delegaciones_gobierno/delegaciones/madrid/servicios/extranjeria.html"
+                          class="text-gray-700 font-medium hover:underline">
                           Apply at Oficina de Extranjeros
-                        </p>
+                        </a>
                         <p class="text-gray-600 text-sm">
                           Immigration office for residence permits
                         </p>
@@ -333,9 +482,11 @@
                         <span class="text-white font-bold text-sm">2</span>
                       </div>
                       <div>
-                        <p class="text-gray-700 font-medium">
+                        <a
+                          href="https://www.barcelona.cat/internationalwelcome/es/alta-en-el-padron-de-habitantes-de-barcelona"
+                          class="text-gray-700 font-medium hover:underline">
                           Get "alta de empadronamiento"
-                        </p>
+                        </a>
                         <p class="text-gray-600 text-sm">
                           Official address registration
                         </p>
@@ -348,9 +499,11 @@
                         <span class="text-white font-bold text-sm">3</span>
                       </div>
                       <div>
-                        <p class="text-gray-700 font-medium">
+                        <a
+                          href="https://ajuntament.barcelona.cat/en/citizen-communication-channels/citizens-face/citizen-help-and-information-offices-oac"
+                          class="text-gray-700 font-medium hover:underline">
                           Register at OAC offices
-                        </p>
+                        </a>
                         <p class="text-gray-600 text-sm">
                           Oficina d'Atenció al Ciutadà in Catalunya
                         </p>
